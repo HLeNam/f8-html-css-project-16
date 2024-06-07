@@ -1,0 +1,34 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    height: 46px;
+    padding: 8px 30px;
+
+    background: var(--dark-color);
+
+    font-size: 1.6rem;
+    user-select: none;
+    white-space: nowrap;
+
+    &--text {
+        background: transparent;
+        border-bottom: 1px solid var(--primary-color);
+    }
+
+    &--primary {
+        background: #ffb700;
+    }
+
+    &[disabled],
+    &--disable {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}

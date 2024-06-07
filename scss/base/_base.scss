@@ -1,7 +1,17 @@
+@use "../abstracts";
+
 *,
 ::before,
 ::after {
     box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fb8f2c;
+    --white-color: #ffffff;
+    --white-color-80: #ffffffcc;
+    --dark-color: #111114;
+    --dark-color-80: #111114cc;
 }
 
 html {
@@ -11,4 +21,47 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Plus Jakarta Sans", sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    background: #111114;
+}
+
+// Common
+.heading {
+    font-family: "Libre Bodoni", serif;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    &--lv1 {
+        font-size: 11rem;
+        font-weight: 700;
+        line-height: 107.273%; /* 107.273% */
+
+        // Mobile
+        @include abstracts.screen(sm) {
+            font-size: 3.6rem;
+            line-height: 144.444%; /* 144.444% */
+        }
+    }
+
+    &--lv2 {
+        font-size: 6.4rem;
+        line-height: 115.625%; /* 115.625% */
+
+        // Mobile
+        @include abstracts.screen(sm) {
+            font-size: 3.4rem;
+            line-height: 144.444%; /* 144.444% */
+        }
+    }
+
+    &--lv3 {
+        font-size: 4rem;
+        line-height: 125%; /* 125% */
+    }
+
+    &--lv4 {
+        font-size: 3rem;
+        line-height: 133.333%; /* 133.333% */
+    }
 }
