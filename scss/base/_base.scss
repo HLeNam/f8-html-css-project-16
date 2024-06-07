@@ -25,6 +25,19 @@ body {
     background: #111114;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
 // Common
 .heading {
     font-family: "Libre Bodoni", serif;

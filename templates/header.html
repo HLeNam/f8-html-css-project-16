@@ -1,3 +1,65 @@
-<div class="header__inner">
-    <h2>Header</h2>
+<div class="container">
+    <div class="top-bar">
+        <!-- More -->
+        <button class="top-bar__more js-toggle" toggle-target="#navbar">
+            <img
+                src="./assets/icons/more.svg"
+                alt=""
+                class="top-bar__more-icon"
+            />
+        </button>
+
+        <!-- Nav -->
+        <nav id="navbar" class="navbar hide">
+            <button class="navbar__close-btn js-toggle" toggle-target="#navbar">
+                <img
+                    src="./assets/icons/white-arrow.svg"
+                    alt=""
+                    class="navbar__close-btn-icon"
+                />
+            </button>
+
+            <ul class="navbar__list">
+                <li>
+                    <a href="#!" class="navbar__link navbar__link--current">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" class="navbar__link">Menu</a>
+                </li>
+                <li>
+                    <a href="#!" class="navbar__link">Blog</a>
+                </li>
+                <li>
+                    <a href="#!" class="navbar__link">Pages</a>
+                </li>
+                <li>
+                    <a href="#!" class="navbar__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
+
+        <!-- Logo -->
+        <a href="./" class="logo">
+            <img src="./assets/icons/logo.svg" alt="" class="logo__img" />
+        </a>
+
+        <div class="top-bar__left">
+            <!-- Notification -->
+            <p class="top-bar__text d-lg-none">11:24 we’re open</p>
+
+            <!-- Reservation button -->
+            <a href="#!" class="btn btn--text top-bar__btn">
+                Table Reservation
+            </a>
+            <a
+                href="#!"
+                class="btn btn--text top-bar__btn top-bar__btn--short d-none"
+            >
+                Book
+            </a>
+        </div>
+    </div>
 </div>
