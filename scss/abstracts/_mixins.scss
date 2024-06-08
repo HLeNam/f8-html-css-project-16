@@ -16,3 +16,9 @@ $grid-breakpoints: (
         @error 'The value "#{$key}" is not in breakpoints list.';
     }
 }
+
+@mixin make-responsive($size) {
+    @media (max-width: $size) {
+        @content;
+    }
+}

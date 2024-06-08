@@ -1,0 +1,113 @@
+@use "../abstracts";
+
+.home {
+    &__introduce {
+        margin-top: 26px;
+
+        &-desc {
+            max-width: 532px;
+            margin-top: 20px;
+            font-size: 1.6rem;
+            line-height: 162.5%; /* 162.5% */
+        }
+
+        &-media {
+            @include abstracts.screen(lg) {
+                display: flex;
+                justify-content: center;
+                padding-right: 65px;
+            }
+        }
+
+        &-img-wrap {
+            position: relative;
+        }
+
+        &-big-img {
+            width: 370px;
+            object-fit: contain;
+
+            @include abstracts.screen(sm) {
+                width: 250px;
+            }
+
+            @include abstracts.make-responsive(350px) {
+                width: 220px;
+            }
+        }
+
+        &-img {
+            position: absolute;
+
+            width: 80px;
+            object-fit: contain;
+
+            @include abstracts.screen(sm) {
+                width: 54px;
+            }
+
+            &:nth-of-type(2) {
+                top: 66px;
+
+                @include abstracts.screen(sm) {
+                    top: 40px;
+                }
+            }
+
+            &:nth-of-type(3) {
+                top: 50%;
+                margin-left: 29px;
+                transform: translateY(-50%);
+
+                @include abstracts.screen(sm) {
+                    margin-left: 16px;
+                }
+            }
+
+            &:nth-of-type(4) {
+                bottom: 66px;
+
+                @include abstracts.screen(sm) {
+                    bottom: 40px;
+                }
+            }
+        }
+
+        &-price {
+            position: absolute;
+            bottom: 68px;
+            left: -25.4px;
+
+            display: inline-block;
+            padding: 12px 16px 8px 16px;
+            background: var(--primary-color);
+
+            color: #fff;
+            font-family: "Libre Bodoni";
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 141.667%; /* 141.667% */
+
+            @include abstracts.screen(sm) {
+                bottom: 46px;
+                left: -16.4px;
+
+                font-size: 1.6rem;
+                padding: 8px 10px 5px 10px;
+            }
+
+            @include abstracts.make-responsive(350px) {
+                bottom: 41px;
+                left: -1.4px;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    &__menu-btn {
+        margin-top: 40px;
+        width: 75px;
+        height: 32px;
+        color: var(--primary-color);
+    }
+}
