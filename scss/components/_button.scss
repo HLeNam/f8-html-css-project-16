@@ -1,5 +1,5 @@
 .btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -9,6 +9,7 @@
 
     background: var(--dark-color);
 
+    color: var(--btn-color, inherit);
     font-size: 1.6rem;
     user-select: none;
     white-space: nowrap;
@@ -17,6 +18,10 @@
         background: transparent;
         border-bottom: 1px solid var(--primary-color);
         padding: 8px 3px;
+    }
+
+    &--primary-text {
+        --btn-color: #fb8f2c;
     }
 
     &--primary {

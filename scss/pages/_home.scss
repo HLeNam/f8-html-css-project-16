@@ -4,6 +4,16 @@
     &__introduce {
         margin-top: 26px;
 
+        &-heading {
+            @include abstracts.screen(xl) {
+                font-size: 5.4rem;
+            }
+
+            @include abstracts.screen(sm) {
+                font-size: 3.6rem;
+            }
+        }
+
         &-desc {
             max-width: 532px;
             margin-top: 20px;
@@ -109,5 +119,200 @@
         width: 75px;
         height: 32px;
         color: var(--primary-color);
+    }
+
+    &__counter {
+        position: relative;
+        margin-top: 70px;
+        padding: 60px 0;
+
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(3, auto);
+
+        @include abstracts.screen(lg) {
+            grid-template-columns: auto;
+            gap: 30px;
+        }
+
+        background: linear-gradient(
+                269deg,
+                rgba(0, 0, 0, 0.2) 21.08%,
+                rgba(0, 0, 0, 0) 38.98%
+            ),
+            rgba(17, 17, 20, 0.6);
+        backdrop-filter: blur(2.5px);
+
+        &-bg {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__popular {
+        position: relative;
+        margin-top: 139px;
+        padding: 48px 0;
+
+        &-decor {
+            position: absolute;
+            top: 76px;
+            left: 0;
+        }
+
+        &-desc {
+            max-width: 601px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.6rem;
+            line-height: 162.5%; /* 162.5% */
+        }
+
+        &-list {
+            margin-top: 60px;
+        }
+
+        &-bottom {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__about {
+        margin-top: 48px;
+        padding: 54px 0;
+
+        &-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            @include abstracts.screen(lg) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-title {
+            margin-bottom: 10px;
+
+            font-family: "Libre Bodoni", serif;
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 141.667%; /* 141.667% */
+        }
+
+        &-left {
+            height: 360px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: #fff;
+
+            background: linear-gradient(to right, #fbf8fc, #111114);
+
+            &-overlay {
+                position: absolute;
+                inset: 0 0 0 0;
+                z-index: 1;
+
+                background: linear-gradient(
+                        269deg,
+                        rgba(0, 0, 0, 0.2) 21.08%,
+                        rgba(0, 0, 0, 0) 38.98%
+                    ),
+                    rgba(17, 17, 20, 0.6);
+
+                backdrop-filter: blur(2.5px);
+
+                background-clip: padding-box;
+            }
+
+            &-bg {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border: 1px solid transparent;
+                border-right: none;
+                background-clip: padding-box;
+
+                &-img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                translate: -50% -50%;
+                z-index: 2;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                // padding: 119px 0;
+            }
+        }
+
+        &-right {
+            height: 360px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: #111114;
+            background: #fb8f2c;
+
+            &-content {
+                text-align: center;
+                width: 296px;
+
+                @include abstracts.make-responsive(350px) {
+                    padding: 0 10px;
+                    width: 250px;
+                }
+            }
+        }
+
+        &-text {
+            margin-top: 5px;
+
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.6rem;
+            line-height: 162.5%; /* 162.5% */
+
+            white-space: nowrap;
+        }
+    }
+}
+
+.counter-item {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+
+    font-family: "Libre Bodoni", serif;
+    color: #fff;
+    font-weight: 500;
+
+    &__number {
+        font-size: 6.4rem;
+        line-height: 115.625%; /* 115.625% */
+    }
+
+    &__title {
+        max-width: 148px;
+        font-size: 2.4rem;
+        line-height: 141.667%; /* 141.667% */
     }
 }

@@ -1,0 +1,82 @@
+@use "../abstracts";
+
+.product-info {
+    &__thumb {
+        display: block;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__row {
+        display: flex;
+
+        &--margin-top {
+            margin-top: 16px;
+        }
+    }
+
+    &__price,
+    &__title {
+        margin-top: 16px;
+        color: #fff;
+        font-family: "Libre Bodoni", serif;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 141.667%; /* 141.667% */
+
+        @include abstracts.screen(lg) {
+            font-size: 1.8rem;
+        }
+
+        @include abstracts.screen(md) {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__title {
+        display: block;
+    }
+
+    &__price {
+        margin-left: auto;
+    }
+
+    &__desc {
+        margin-top: 6px;
+
+        font-size: 1.6rem;
+        line-height: 162.5%; /* 162.5% */
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__stars {
+        margin-left: auto;
+
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__star {
+        width: 26px;
+        height: 26px;
+
+        @include abstracts.screen(lg) {
+            width: 16px;
+            height: 16px;
+        }
+
+        @include abstracts.screen(md) {
+            width: 26px;
+            height: 26px;
+        }
+    }
+
+    &__btn {
+        height: 32px;
+        padding: 8px 0;
+    }
+}

@@ -79,6 +79,10 @@ button {
         line-height: 133.333%; /* 133.333% */
     }
 
+    &--center {
+        text-align: center;
+    }
+
     &__label {
         display: block;
         margin-bottom: 10px;
@@ -87,4 +91,11 @@ button {
         font-size: 1.6rem;
         line-height: 162.5%; /* 162.5% */
     }
+}
+
+.top-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

@@ -52,62 +52,416 @@
             load("#header", "./templates/header.html");
         </script>
 
-        <main class="container home">
+        <main class="home">
             <!-- Introduce -->
-            <div class="home__introduce">
-                <div class="row">
-                    <div class="col-6 col-lg-12">
-                        <div class="home__introduce-content">
-                            <span class="heading__label">Hi, new friend!</span>
-                            <h1
-                                class="heading heading--lv2 home__introduce-heading"
-                            >
-                                We do not cook, we create your emotions!
-                            </h1>
-                            <p class="home__introduce-desc">
-                                There's evidence that cooking, like other
-                                creative practices, can boost well-being,
-                                self-esteem, and other measures of mental
-                                health.
-                            </p>
+            <div class="container">
+                <section class="home__introduce">
+                    <div class="row">
+                        <div class="col-7 col-xl-6 col-lg-12">
+                            <section class="home__introduce-content">
+                                <span class="heading__label"
+                                    >Hi, new friend!</span
+                                >
+                                <h1
+                                    class="heading heading--lv2 home__introduce-heading"
+                                >
+                                    We do not cook, we create your emotions!
+                                </h1>
+                                <p class="home__introduce-desc">
+                                    There's evidence that cooking, like other
+                                    creative practices, can boost well-being,
+                                    self-esteem, and other measures of mental
+                                    health.
+                                </p>
 
-                            <a href="#!" class="home__menu-btn btn btn--text">
-                                Our menu
-                            </a>
+                                <a
+                                    href="#!"
+                                    class="home__menu-btn btn btn--text"
+                                >
+                                    Our menu
+                                </a>
+                            </section>
+                        </div>
+                        <div class="col-5 col-xl-6 col-lg-12">
+                            <div class="home__introduce-media">
+                                <div class="home__introduce-img-wrap">
+                                    <img
+                                        src="./assets/img/introduce-product/product-1.png"
+                                        alt=""
+                                        class="home__introduce-big-img"
+                                    />
+                                    <img
+                                        src="./assets/img/introduce-product/product-2.png"
+                                        alt=""
+                                        class="home__introduce-img"
+                                    />
+                                    <img
+                                        src="./assets/img/introduce-product/product-3.png"
+                                        alt=""
+                                        class="home__introduce-img"
+                                    />
+                                    <img
+                                        src="./assets/img/introduce-product/product-4.png"
+                                        alt=""
+                                        class="home__introduce-img"
+                                    />
+
+                                    <span class="home__introduce-price">
+                                        Price:$11
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-12">
-                        <div class="home__introduce-media">
-                            <div class="home__introduce-img-wrap">
-                                <img
-                                    src="./assets/img/introduce-product/product-1.png"
-                                    alt=""
-                                    class="home__introduce-big-img"
-                                />
-                                <img
-                                    src="./assets/img/introduce-product/product-2.png"
-                                    alt=""
-                                    class="home__introduce-img"
-                                />
-                                <img
-                                    src="./assets/img/introduce-product/product-3.png"
-                                    alt=""
-                                    class="home__introduce-img"
-                                />
-                                <img
-                                    src="./assets/img/introduce-product/product-4.png"
-                                    alt=""
-                                    class="home__introduce-img"
-                                />
+                </section>
+            </div>
 
-                                <span class="home__introduce-price">
-                                    Price:$11
-                                </span>
+            <!-- Counter -->
+            <div class="home__counter">
+                <img
+                    src="./assets/img/home-counter-bg.png"
+                    alt=""
+                    class="home__counter-bg"
+                />
+
+                <!-- Counter item 1 -->
+                <div class="counter-item">
+                    <span class="counter-item__number">06</span>
+                    <p class="counter-item__title">Number Restaurant</p>
+                </div>
+
+                <!-- Counter item 2 -->
+                <div class="counter-item">
+                    <span class="counter-item__number">68</span>
+                    <p class="counter-item__title">New Food Menu Dishes</p>
+                </div>
+
+                <!-- Counter item 3 -->
+                <div class="counter-item">
+                    <span class="counter-item__number">36</span>
+                    <p class="counter-item__title">Years of experience</p>
+                </div>
+            </div>
+
+            <!-- Popular -->
+            <section class="home__popular">
+                <div class="container">
+                    <div class="top-center">
+                        <h2 class="heading heading--lv2 heading--center">
+                            Most popular food
+                        </h2>
+                        <p class="home__popular-desc">
+                            A list of most popular Bangladeshi food including
+                            mains, drinks, and deserts you must try while in
+                            Bangladesh, for an authentic experience. Check now!
+                        </p>
+
+                        <div class="home__popular-list">
+                            <div
+                                class="row gx-lg-2 gy-md-3 row-cols-3 row-cols-md-1"
+                            >
+                                <!-- Product info 1 -->
+                                <div class="col">
+                                    <article class="product-info">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/product/product-1.png"
+                                                alt=""
+                                                class="product-info__thumb"
+                                            />
+                                        </a>
+                                        <div class="product-info__row">
+                                            <h3>
+                                                <a
+                                                    href="#!"
+                                                    class="product-info__title"
+                                                >
+                                                    Schezwan Noodles
+                                                </a>
+                                            </h3>
+                                            <span class="product-info__price">
+                                                $49
+                                            </span>
+                                        </div>
+                                        <p class="product-info__desc">
+                                            Fresh toasted sourdough bread with
+                                            olive oil and pomegranate.
+                                        </p>
+                                        <div
+                                            class="product-info__row product-info__row--margin-top"
+                                        >
+                                            <a
+                                                href="#!"
+                                                class="btn btn--text product-info__btn"
+                                            >
+                                                Order Now
+                                            </a>
+
+                                            <div class="product-info__stars">
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Product info 2 -->
+                                <div class="col">
+                                    <article class="product-info">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/product/product-2.png"
+                                                alt=""
+                                                class="product-info__thumb"
+                                            />
+                                        </a>
+                                        <div class="product-info__row">
+                                            <h3>
+                                                <a
+                                                    href="#!"
+                                                    class="product-info__title"
+                                                >
+                                                    Schezwan Noodles
+                                                </a>
+                                            </h3>
+                                            <span class="product-info__price">
+                                                $49
+                                            </span>
+                                        </div>
+                                        <p class="product-info__desc">
+                                            Fresh toasted sourdough bread with
+                                            olive oil and pomegranate.
+                                        </p>
+                                        <div
+                                            class="product-info__row product-info__row--margin-top"
+                                        >
+                                            <a
+                                                href="#!"
+                                                class="btn btn--text product-info__btn"
+                                            >
+                                                Order Now
+                                            </a>
+
+                                            <div class="product-info__stars">
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/blank-star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Product info 3 -->
+                                <div class="col">
+                                    <article class="product-info">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/product/product-3.png"
+                                                alt=""
+                                                class="product-info__thumb"
+                                            />
+                                        </a>
+                                        <div class="product-info__row">
+                                            <h3>
+                                                <a
+                                                    href="#!"
+                                                    class="product-info__title"
+                                                >
+                                                    Schezwan Noodles
+                                                </a>
+                                            </h3>
+                                            <span class="product-info__price">
+                                                $49
+                                            </span>
+                                        </div>
+                                        <p class="product-info__desc">
+                                            Fresh toasted sourdough bread with
+                                            olive oil and pomegranate.
+                                        </p>
+                                        <div
+                                            class="product-info__row product-info__row--margin-top"
+                                        >
+                                            <a
+                                                href="#!"
+                                                class="btn btn--text product-info__btn"
+                                            >
+                                                Order Now
+                                            </a>
+
+                                            <div class="product-info__stars">
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/blank-star.svg"
+                                                    alt=""
+                                                    class="product-info__star"
+                                                />
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <div class="home__popular-bottom">
+                                <a
+                                    href="#!"
+                                    class="btn btn--text btn--primary-text"
+                                >
+                                    Explore All Food
+                                    <img
+                                        src="./assets/icons/right-arrow.svg"
+                                        alt=""
+                                    />
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <img
+                    src="./assets/icons/decor.svg"
+                    alt=""
+                    class="home__popular-decor d-md-none"
+                />
+            </section>
+
+            <!-- About Us -->
+            <section class="home__about">
+                <div class="container">
+                    <div class="home__about-inner">
+                        <div class="home__about-left">
+                            <div class="home__about-left-bg">
+                                <img
+                                    src="./assets/img/home-about-left-bg.png"
+                                    alt=""
+                                    class="home__about-left-bg-img"
+                                />
+
+                                <div class="home__about-left-overlay"></div>
+                            </div>
+
+                            <div class="home__about-left-content">
+                                <h2 class="home__about-title">Find us gere</h2>
+                                <p class="home__about-text">
+                                    Avenue Marina 34568 NY (U.S)
+                                </p>
+                                <a
+                                    href="tel:0123 456 7890"
+                                    class="home__about-text"
+                                >
+                                    +0123 456 7890
+                                </a>
+                                <a
+                                    href="maito:hellouihut@gmail.com"
+                                    class="home__about-text"
+                                >
+                                    hellouihut@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="home__about-right">
+                            <div class="home__about-right-content">
+                                <h2 class="home__about-title">
+                                    Openning Times
+                                </h2>
+                                <p class="home__about-text">
+                                    Mon
+                                    <span class="home__about-time">
+                                        17:00 to 23:00
+                                    </span>
+                                </p>
+                                <p class="home__about-text">
+                                    Wed
+                                    <span class="home__about-time">
+                                        19:00 to 24:00
+                                    </span>
+                                </p>
+                                <p class="home__about-text">
+                                    Thu
+                                    <span class="home__about-time">
+                                        14:00 to 18:00
+                                    </span>
+                                </p>
+                                <p class="home__about-text">
+                                    Fr
+                                    <span class="home__about-time">
+                                        16:00 to 24:00
+                                    </span>
+                                </p>
+                                <p class="home__about-text">
+                                    Sat/Sun
+                                    <span class="home__about-time">
+                                        20:00 to 4:00
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer id="footer" class="footer"></footer>

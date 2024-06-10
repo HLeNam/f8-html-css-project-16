@@ -207,6 +207,9 @@ button {
   font-size: 3rem;
   line-height: 133.333%; /* 133.333% */
 }
+.heading--center {
+  text-align: center;
+}
 .heading__label {
   display: block;
   margin-bottom: 10px;
@@ -214,6 +217,13 @@ button {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 162.5%; /* 162.5% */
+}
+
+.top-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .row > *, .container-fluid, .container {
@@ -1338,13 +1348,14 @@ button {
   }
 }
 .btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   height: 46px;
   padding: 8px 30px;
   background: var(--dark-color);
+  color: var(--btn-color, inherit);
   font-size: 1.6rem;
   user-select: none;
   white-space: nowrap;
@@ -1353,6 +1364,9 @@ button {
   background: transparent;
   border-bottom: 1px solid var(--primary-color);
   padding: 8px 3px;
+}
+.btn--primary-text {
+  --btn-color: #fb8f2c;
 }
 .btn--primary {
   background: #ffb700;
@@ -1363,6 +1377,78 @@ button {
 }
 .btn:hover {
   opacity: 0.9;
+}
+
+.product-info__thumb {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+.product-info__row {
+  display: flex;
+}
+.product-info__row--margin-top {
+  margin-top: 16px;
+}
+.product-info__price, .product-info__title {
+  margin-top: 16px;
+  color: #fff;
+  font-family: "Libre Bodoni", serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 141.667%; /* 141.667% */
+}
+@media (max-width: 991.98px) {
+  .product-info__price, .product-info__title {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .product-info__price, .product-info__title {
+    font-size: 2.4rem;
+  }
+}
+.product-info__title {
+  display: block;
+}
+.product-info__price {
+  margin-left: auto;
+}
+.product-info__desc {
+  margin-top: 6px;
+  font-size: 1.6rem;
+  line-height: 162.5%; /* 162.5% */
+}
+@media (max-width: 767.98px) {
+  .product-info__desc {
+    font-size: 1.4rem;
+  }
+}
+.product-info__stars {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.product-info__star {
+  width: 26px;
+  height: 26px;
+}
+@media (max-width: 991.98px) {
+  .product-info__star {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 767.98px) {
+  .product-info__star {
+    width: 26px;
+    height: 26px;
+  }
+}
+.product-info__btn {
+  height: 32px;
+  padding: 8px 0;
 }
 
 .top-bar {
@@ -1517,6 +1603,16 @@ button {
 .home__introduce {
   margin-top: 26px;
 }
+@media (max-width: 1199.98px) {
+  .home__introduce-heading {
+    font-size: 5.4rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .home__introduce-heading {
+    font-size: 3.6rem;
+  }
+}
 .home__introduce-desc {
   max-width: 532px;
   margin-top: 20px;
@@ -1616,6 +1712,159 @@ button {
   width: 75px;
   height: 32px;
   color: var(--primary-color);
+}
+.home__counter {
+  position: relative;
+  margin-top: 70px;
+  padding: 60px 0;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3, auto);
+  background: linear-gradient(269deg, rgba(0, 0, 0, 0.2) 21.08%, rgba(0, 0, 0, 0) 38.98%), rgba(17, 17, 20, 0.6);
+  backdrop-filter: blur(2.5px);
+}
+@media (max-width: 991.98px) {
+  .home__counter {
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+}
+.home__counter-bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home__popular {
+  position: relative;
+  margin-top: 139px;
+  padding: 48px 0;
+}
+.home__popular-decor {
+  position: absolute;
+  top: 76px;
+  left: 0;
+}
+.home__popular-desc {
+  max-width: 601px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 162.5%; /* 162.5% */
+}
+.home__popular-list {
+  margin-top: 60px;
+}
+.home__popular-bottom {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home__about {
+  margin-top: 48px;
+  padding: 54px 0;
+}
+.home__about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 991.98px) {
+  .home__about-inner {
+    grid-template-columns: 1fr;
+  }
+}
+.home__about-title {
+  margin-bottom: 10px;
+  font-family: "Libre Bodoni", serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 141.667%; /* 141.667% */
+}
+.home__about-left {
+  height: 360px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(to right, #fbf8fc, #111114);
+}
+.home__about-left-overlay {
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: 1;
+  background: linear-gradient(269deg, rgba(0, 0, 0, 0.2) 21.08%, rgba(0, 0, 0, 0) 38.98%), rgba(17, 17, 20, 0.6);
+  backdrop-filter: blur(2.5px);
+  background-clip: padding-box;
+}
+.home__about-left-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-right: none;
+  background-clip: padding-box;
+}
+.home__about-left-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home__about-left-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__about-right {
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111114;
+  background: #fb8f2c;
+}
+.home__about-right-content {
+  text-align: center;
+  width: 296px;
+}
+@media (max-width: 350px) {
+  .home__about-right-content {
+    padding: 0 10px;
+    width: 250px;
+  }
+}
+.home__about-text {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  line-height: 162.5%; /* 162.5% */
+  white-space: nowrap;
+}
+
+.counter-item {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  font-family: "Libre Bodoni", serif;
+  color: #fff;
+  font-weight: 500;
+}
+.counter-item__number {
+  font-size: 6.4rem;
+  line-height: 115.625%; /* 115.625% */
+}
+.counter-item__title {
+  max-width: 148px;
+  font-size: 2.4rem;
+  line-height: 141.667%; /* 141.667% */
 }
 
 /*# sourceMappingURL=main.css.map */
