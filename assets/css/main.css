@@ -1459,6 +1459,54 @@ button {
   padding: 8px 0;
 }
 
+.feature-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px 0;
+  background: #fb8f2c;
+  overflow: hidden;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  color: #111114;
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 110.526%; /* 110.526% */
+}
+
+.staff-item {
+  width: 100%;
+}
+.staff-item__img {
+  width: 100%;
+  object-fit: cover;
+}
+.staff-item__info {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.staff-item__name {
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  line-height: 133.333%; /* 133.333% */
+}
+.staff-item__role {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 155.556%; /* 155.556% */
+}
+
 .top-bar {
   position: relative;
   display: flex;
@@ -2234,8 +2282,14 @@ button {
   display: block;
   position: absolute;
   inset: 23px 30px;
-  background: transparent;
-  border: 1px solid #fff;
+}
+.home__daily-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: block;
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.1));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 1px, 1px 1px, 1px calc(100% - 1px), 0 calc(100% - 1px));
 }
 @media (max-width: 375.98px) {
   .home__daily-frame {
@@ -2262,6 +2316,7 @@ button {
 }
 .home__daily-sale {
   display: flex;
+  align-items: flex-end;
   gap: 6px;
   margin-top: 6px;
   color: #fff;
@@ -2275,7 +2330,6 @@ button {
     font-size: 1.6rem;
     line-height: 137.5%; /* 137.5% */
     gap: 3px;
-    align-items: flex-end;
   }
 }
 .home__daily-desc {
@@ -2356,6 +2410,28 @@ button {
     width: 100%;
     height: auto;
   }
+}
+.home__feature-banner {
+  margin-top: 81px;
+}
+.home__staff {
+  margin-top: 150px;
+}
+.home__staff-desc {
+  margin-top: 16px;
+  max-width: 768px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  line-height: 162.5%; /* 162.5% */
+}
+.home__staff-list {
+  position: relative;
+  margin-top: 40px;
+}
+.home__staff-decor {
+  position: absolute;
+  top: -52px;
+  left: -52px;
 }
 
 .counter-item {

@@ -732,8 +732,32 @@
 
             inset: 23px 30px;
 
-            background: transparent;
-            border: 1px solid #fff;
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+
+                display: block;
+
+                background: linear-gradient(
+                    to right,
+                    #fff,
+                    rgba(255, 255, 255, 0.1)
+                );
+
+                clip-path: polygon(
+                    0 0,
+                    100% 0,
+                    100% 100%,
+                    0 100%,
+                    0 calc(100% - 1px),
+                    calc(100% - 1px) calc(100% - 1px),
+                    calc(100% - 1px) 1px,
+                    1px 1px,
+                    1px calc(100% - 1px),
+                    0 calc(100% - 1px)
+                );
+            }
 
             @include abstracts.make-responsive(375.98px) {
                 inset: 14px 18px;
@@ -761,6 +785,7 @@
 
         &-sale {
             display: flex;
+            align-items: flex-end;
             gap: 6px;
 
             margin-top: 6px;
@@ -777,7 +802,6 @@
                 line-height: 137.5%; /* 137.5% */
 
                 gap: 3px;
-                align-items: flex-end;
             }
         }
 
@@ -865,6 +889,35 @@
                     height: auto;
                 }
             }
+        }
+    }
+
+    &__feature-banner {
+        margin-top: 81px;
+    }
+
+    &__staff {
+        margin-top: 150px;
+
+        &-desc {
+            margin-top: 16px;
+            max-width: 768px;
+
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            line-height: 162.5%; /* 162.5% */
+        }
+
+        &-list {
+            position: relative;
+
+            margin-top: 40px;
+        }
+
+        &-decor {
+            position: absolute;
+            top: -52px;
+            left: -52px;
         }
     }
 }

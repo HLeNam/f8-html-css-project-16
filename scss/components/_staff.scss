@@ -1,0 +1,31 @@
+.staff-item {
+    width: 100%;
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__info {
+        margin-top: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        color: #fff;
+    }
+
+    &__name {
+        font-family: "Libre Bodoni";
+        font-size: 3rem;
+        line-height: 133.333%; /* 133.333% */
+    }
+
+    &__role {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 155.556%; /* 155.556% */
+    }
+}
