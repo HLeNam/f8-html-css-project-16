@@ -1,0 +1,90 @@
+@use "../abstracts";
+
+.blog-item {
+    display: flex;
+    gap: 30px;
+
+    @include abstracts.screen(lg) {
+        flex-direction: column !important;
+    }
+
+    &__media {
+        width: calc(50% - 15px);
+
+        @include abstracts.screen(lg) {
+            width: 100%;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    &__time {
+        display: block;
+        margin-bottom: 20px;
+
+        color: #fff;
+        line-height: 162.5%; /* 162.5% */
+    }
+
+    &__content {
+        flex-grow: 1;
+    }
+
+    &__heading {
+        @include abstracts.screen(sm) {
+            font-size: 2.4rem;
+            line-height: 141.667%; /* 141.667% */
+        }
+    }
+
+    &__desc {
+        max-width: 570px;
+        margin-top: 20px;
+
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 155.556%; /* 155.556% */
+
+        @include abstracts.screen(sm) {
+            font-size: 1.4rem;
+            line-height: 171.429%; /* 171.429% */
+        }
+    }
+
+    &__summary {
+        margin-top: 30px;
+
+        color: #fff;
+        line-height: 162.5%; /* 162.5% */
+
+        @include abstracts.screen(sm) {
+            margin-top: 28px;
+        }
+    }
+
+    &__views {
+        margin-left: 111px;
+
+        @include abstracts.make-responsive(332px) {
+            margin-left: 90px;
+        }
+    }
+
+    &__btn {
+        margin-top: 30px;
+
+        color: #fff;
+        line-height: 162.5%; /* 162.5% */
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+}
