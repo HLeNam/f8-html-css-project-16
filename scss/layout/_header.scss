@@ -150,7 +150,7 @@
     }
 }
 
-.logo {
+.header__logo {
     @include abstracts.screen(xl) {
         position: absolute;
         top: 50%;

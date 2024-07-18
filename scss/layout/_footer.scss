@@ -1,0 +1,138 @@
+@use "../abstracts";
+
+.footer {
+    margin-top: 100px;
+    padding: 50px 0;
+
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 162.5%; /* 162.5% */
+
+    &__row {
+        display: flex;
+        gap: 77px;
+
+        @include abstracts.screen(xl) {
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        @include abstracts.screen(sm) {
+            column-gap: 30px;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        height: 244px;
+
+        &--margin {
+            margin-left: auto;
+
+            @include abstracts.screen(xl) {
+                margin-left: initial;
+            }
+        }
+
+        &:first-child,
+        &:last-child {
+            @include abstracts.screen(md) {
+                height: auto;
+                width: 100%;
+                align-items: center;
+            }
+
+            @include abstracts.screen(sm) {
+                align-items: initial;
+            }
+        }
+
+        &:nth-child(3) {
+            @include abstracts.screen(xxl) {
+                max-width: 197px;
+                height: auto;
+            }
+        }
+
+        &:nth-child(4) {
+            @include abstracts.screen(sm) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &:nth-child(5) {
+            @include abstracts.screen(xl) {
+                align-items: center;
+                text-align: center;
+                height: auto;
+            }
+
+            @include abstracts.screen(lg) {
+                align-items: initial;
+                text-align: initial;
+            }
+
+            @include abstracts.screen(sm) {
+                height: auto;
+            }
+        }
+    }
+
+    &__list {
+        margin-top: 24px;
+    }
+
+    &__heading {
+        white-space: nowrap;
+
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 130%; /* 130% */
+    }
+
+    &__link {
+        display: block;
+        padding: 8px 0;
+
+        &--under {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+
+        &:hover {
+            color: #fb8f2c;
+        }
+    }
+
+    &__desc {
+        margin-top: auto;
+
+        max-width: 211px;
+
+        @include abstracts.screen(md) {
+            max-width: initial;
+        }
+
+        @include abstracts.screen(sm) {
+            max-width: 211px;
+        }
+    }
+
+    &__cta {
+        margin-top: 18px;
+
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    &__copyright {
+        margin-top: 16px;
+        white-space: nowrap;
+    }
+}
