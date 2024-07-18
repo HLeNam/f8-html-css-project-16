@@ -1,0 +1,139 @@
+@use "../abstracts";
+
+.about {
+    &__intro {
+        margin-top: 110px;
+
+        @include abstracts.screen(sm) {
+            margin-top: 80px;
+        }
+
+        &-top {
+            max-width: 1035px;
+        }
+
+        &-desc {
+            margin-top: 16px;
+        }
+    }
+
+    &__media {
+        margin-top: 150px;
+
+        @include abstracts.screen(sm) {
+            margin-top: 70px;
+        }
+
+        &-inner {
+            position: relative;
+
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 30px 30px;
+
+            @include abstracts.screen(lg) {
+                gap: 20px 20px;
+            }
+
+            grid-template-areas:
+                "pic1 pic2"
+                "pic3 pic2"
+                "pic3 text";
+
+            @include abstracts.screen(md) {
+                grid-template-columns: 1fr;
+                grid-template-rows: initial;
+                gap: 30px;
+
+                grid-template-areas:
+                    "text"
+                    "pic1"
+                    "pic2"
+                    "pic3";
+            }
+
+            @include abstracts.screen(sm) {
+                gap: 24px;
+            }
+        }
+
+        &-img {
+            &:nth-child(1) {
+                grid-area: pic1;
+                width: 100%;
+            }
+
+            &:nth-child(2) {
+                grid-area: pic2;
+                width: 100%;
+            }
+
+            &:nth-child(3) {
+                grid-area: pic3;
+                width: 82.5%;
+                margin-left: auto;
+
+                @include abstracts.screen(md) {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-content {
+            position: absolute;
+            top: 45%;
+            right: 0;
+            width: calc(50% - 15px);
+            padding: 30px 0 0 30px;
+
+            @include abstracts.screen(lg) {
+                padding: 10px 0 0 10px;
+            }
+
+            @include abstracts.screen(md) {
+                position: initial;
+
+                width: 100%;
+
+                padding: 0;
+            }
+        }
+
+        &-heading {
+            @include abstracts.screen(xxl) {
+                font-size: 5rem;
+            }
+
+            @include abstracts.screen(lg) {
+                font-size: 3.4rem;
+            }
+
+            @include abstracts.screen(sm) {
+                max-width: 320px;
+
+                line-height: 129.412%; /* 129.412% */
+            }
+        }
+
+        &-desc {
+            margin-top: 16px;
+
+            max-width: 538px;
+
+            grid-area: text;
+
+            @include abstracts.screen(lg) {
+                margin-top: 10px;
+            }
+
+            @include abstracts.screen(sm) {
+                margin-bottom: 16px;
+
+                max-width: 337px;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

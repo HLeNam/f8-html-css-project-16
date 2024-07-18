@@ -2781,4 +2781,124 @@ input:-webkit-autofill:hover {
   line-height: 141.667%; /* 141.667% */
 }
 
+.about__intro {
+  margin-top: 110px;
+}
+@media (max-width: 575.98px) {
+  .about__intro {
+    margin-top: 80px;
+  }
+}
+.about__intro-top {
+  max-width: 1035px;
+}
+.about__intro-desc {
+  margin-top: 16px;
+}
+.about__media {
+  margin-top: 150px;
+}
+@media (max-width: 575.98px) {
+  .about__media {
+    margin-top: 70px;
+  }
+}
+.about__media-inner {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px 30px;
+  grid-template-areas: "pic1 pic2" "pic3 pic2" "pic3 text";
+}
+@media (max-width: 991.98px) {
+  .about__media-inner {
+    gap: 20px 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .about__media-inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: initial;
+    gap: 30px;
+    grid-template-areas: "text" "pic1" "pic2" "pic3";
+  }
+}
+@media (max-width: 575.98px) {
+  .about__media-inner {
+    gap: 24px;
+  }
+}
+.about__media-img:nth-child(1) {
+  grid-area: pic1;
+  width: 100%;
+}
+.about__media-img:nth-child(2) {
+  grid-area: pic2;
+  width: 100%;
+}
+.about__media-img:nth-child(3) {
+  grid-area: pic3;
+  width: 82.5%;
+  margin-left: auto;
+}
+@media (max-width: 767.98px) {
+  .about__media-img:nth-child(3) {
+    width: 100%;
+  }
+}
+.about__media-content {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  width: calc(50% - 15px);
+  padding: 30px 0 0 30px;
+}
+@media (max-width: 991.98px) {
+  .about__media-content {
+    padding: 10px 0 0 10px;
+  }
+}
+@media (max-width: 767.98px) {
+  .about__media-content {
+    position: initial;
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 1399.98px) {
+  .about__media-heading {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .about__media-heading {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .about__media-heading {
+    max-width: 320px;
+    line-height: 129.412%; /* 129.412% */
+  }
+}
+.about__media-desc {
+  margin-top: 16px;
+  max-width: 538px;
+  grid-area: text;
+}
+@media (max-width: 991.98px) {
+  .about__media-desc {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .about__media-desc {
+    margin-bottom: 16px;
+    max-width: 337px;
+    font-size: 1.4rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
