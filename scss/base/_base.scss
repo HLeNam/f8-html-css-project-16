@@ -83,6 +83,13 @@ button {
         text-align: center;
     }
 
+    &--margin {
+        margin-bottom: 16px;
+
+        @include abstracts.screen(sm) {
+        }
+    }
+
     &__label {
         display: block;
         margin-bottom: 10px;
