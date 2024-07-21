@@ -1,6 +1,15 @@
 @use "../abstracts";
 
+%clamp-text {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .product-info {
+    height: 100%;
+
     &__thumb {
         display: block;
         width: 100%;
@@ -9,6 +18,7 @@
 
     &__row {
         display: flex;
+        align-items: center;
 
         &--margin-top {
             margin-top: 16px;
@@ -34,7 +44,7 @@
     }
 
     &__title {
-        display: block;
+        @extend %clamp-text;
     }
 
     &__price {
@@ -46,6 +56,10 @@
 
         font-size: 1.6rem;
         line-height: 162.5%; /* 162.5% */
+
+        --line-clamp: 3;
+
+        @extend %clamp-text;
 
         @include abstracts.screen(md) {
             font-size: 1.4rem;

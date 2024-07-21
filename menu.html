@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restaurant</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Embed Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <main>
+            <!-- Breakfast -->
+            <section class="menu__breakfast">
+                <div class="container">
+                    <!-- Heading -->
+                    <div class="top-center">
+                        <h1 class="heading heading--lv2">Breakfast</h1>
+                        <img src="./assets/icons/menu-decor-1.svg" alt="" />
+                    </div>
+
+                    <div class="menu__product-list">
+                        <!-- Button -->
+                        <button class="menu__btn btn btn--circle d-md-none">
+                            <img
+                                src="./assets/icons/right-arrow.svg"
+                                alt=""
+                                class="menu__btn-icon menu__btn-icon--reverse"
+                            />
+                        </button>
+                        <button
+                            class="menu__btn menu__btn--right btn btn--circle d-md-none"
+                        >
+                            <img
+                                src="./assets/icons/right-arrow.svg"
+                                alt=""
+                                class="menu__btn-icon"
+                            />
+                        </button>
+
+                        <!-- List -->
+                        <div class="menu__row">
+                            <!-- Product info 1 -->
+                            <div class="menu__col">
+                                <article class="product-info">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/menu-page/product-1.png"
+                                            alt=""
+                                            class="product-info__thumb"
+                                        />
+                                    </a>
+                                    <div class="product-info__row">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="product-info__title"
+                                            >
+                                                Egg Frittata Muffins. PIN IT
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="product-info__desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+
+                                    <div class="separate"></div>
+
+                                    <div
+                                        class="product-info__row product-info__row--margin-top"
+                                    >
+                                        <a
+                                            href="#!"
+                                            class="btn btn--text btn--text-white product-info__btn"
+                                        >
+                                            Order Now
+                                        </a>
+
+                                        <span class="product-info__price">
+                                            $24
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Product info 2 -->
+                            <div class="menu__col">
+                                <article class="product-info">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/menu-page/product-2.png"
+                                            alt=""
+                                            class="product-info__thumb"
+                                        />
+                                    </a>
+                                    <div class="product-info__row">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="product-info__title"
+                                            >
+                                                Breakfast Bars. PIN IT
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="product-info__desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+
+                                    <div class="separate"></div>
+
+                                    <div
+                                        class="product-info__row product-info__row--margin-top"
+                                    >
+                                        <a
+                                            href="#!"
+                                            class="btn btn--text btn--text-white product-info__btn"
+                                        >
+                                            Order Now
+                                        </a>
+
+                                        <span class="product-info__price">
+                                            $29
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Product info 3 -->
+                            <div class="menu__col">
+                                <article class="product-info">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/menu-page/product-3.png"
+                                            alt=""
+                                            class="product-info__thumb"
+                                        />
+                                    </a>
+                                    <div class="product-info__row">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="product-info__title"
+                                            >
+                                                Breakfast Sandwiches
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="product-info__desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+
+                                    <div class="separate"></div>
+
+                                    <div
+                                        class="product-info__row product-info__row--margin-top"
+                                    >
+                                        <a
+                                            href="#!"
+                                            class="btn btn--text btn--text-white product-info__btn"
+                                        >
+                                            Order Now
+                                        </a>
+
+                                        <span class="product-info__price">
+                                            $19
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Bottom -->
+                        <div class="dots d-none d-md-flex">
+                            <div class="dot dot--current"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Order -->
+            <section class="menu__order">
+                <img
+                    src="./assets/img/menu_order-bg.png"
+                    alt=""
+                    class="menu__order-img"
+                />
+                <div class="container">
+                    <div class="menu__order-body top-center">
+                        <h2 class="menu__order-heading heading heading--lv2">
+                            Food is not just eating energy
+                        </h2>
+                        <p class="menu__order-desc">It’s an experience.</p>
+
+                        <a href="#!" class="menu__order-btn btn btn--primary">
+                            Order Now</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lunch -->
+            <section class="menu__lunch">
+                <div class="container">
+                    <!-- Heading -->
+                    <div class="top-center">
+                        <h1 class="heading heading--lv2">Lunch</h1>
+                        <img src="./assets/icons/menu-decor-1.svg" alt="" />
+                    </div>
+
+                    <div class="menu__product-list">
+                        <img
+                            src="./assets/icons/decor-2.svg"
+                            alt=""
+                            class="menu__lunch-decor d-lg-none"
+                        />
+
+                        <img
+                            src="./assets/icons/decor-4.svg"
+                            alt=""
+                            class="menu__lunch-decor d-lg-none"
+                        />
+
+                        <!-- Button -->
+                        <button class="menu__btn btn btn--circle d-md-none">
+                            <img
+                                src="./assets/icons/right-arrow.svg"
+                                alt=""
+                                class="menu__btn-icon menu__btn-icon--reverse"
+                            />
+                        </button>
+                        <button
+                            class="menu__btn menu__btn--right btn btn--circle d-md-none"
+                        >
+                            <img
+                                src="./assets/icons/right-arrow.svg"
+                                alt=""
+                                class="menu__btn-icon"
+                            />
+                        </button>
+
+                        <!-- List -->
+                        <div class="menu__row">
+                            <!-- Product info 1 -->
+                            <div class="menu__col">
+                                <article class="product-info">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/menu-page/product-1.png"
+                                            alt=""
+                                            class="product-info__thumb"
+                                        />
+                                    </a>
+                                    <div class="product-info__row">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="product-info__title"
+                                            >
+                                                Egg Frittata Muffins. PIN IT
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="product-info__desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+
+                                    <div class="separate"></div>
+
+                                    <div
+                                        class="product-info__row product-info__row--margin-top"
+                                    >
+                                        <a
+                                            href="#!"
+                                            class="btn btn--text btn--text-white product-info__btn"
+                                        >
+                                            Order Now
+                                        </a>
+
+                                        <span class="product-info__price">
+                                            $24
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Product info 2 -->
+                            <div class="menu__col">
+                                <article class="product-info">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/menu-page/product-2.png"
+                                            alt=""
+                                            class="product-info__thumb"
+                                        />
+                                    </a>
+                                    <div class="product-info__row">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="product-info__title"
+                                            >
+                                                Breakfast Bars. PIN IT
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="product-info__desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+
+                                    <div class="separate"></div>
+
+                                    <div
+                                        class="product-info__row product-info__row--margin-top"
+                                    >
+                                        <a
+                                            href="#!"
+                                            class="btn btn--text btn--text-white product-info__btn"
+                                        >
+                                            Order Now
+                                        </a>
+
+                                        <span class="product-info__price">
+                                            $29
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Product info 3 -->
+                            <div class="menu__col">
+                                <article class="product-info">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/menu-page/product-3.png"
+                                            alt=""
+                                            class="product-info__thumb"
+                                        />
+                                    </a>
+                                    <div class="product-info__row">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="product-info__title"
+                                            >
+                                                Breakfast Sandwiches
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="product-info__desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+
+                                    <div class="separate"></div>
+
+                                    <div
+                                        class="product-info__row product-info__row--margin-top"
+                                    >
+                                        <a
+                                            href="#!"
+                                            class="btn btn--text btn--text-white product-info__btn"
+                                        >
+                                            Order Now
+                                        </a>
+
+                                        <span class="product-info__price">
+                                            $19
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Bottom -->
+                        <div class="dots d-none d-md-flex">
+                            <div class="dot dot--current"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dinner -->
+            <section class="menu__dinner">
+                <div class="container">
+                    <!-- Heading -->
+                    <div class="top-center">
+                        <h1 class="heading heading--lv2">Dinner</h1>
+                        <img src="./assets/icons/menu-decor-1.svg" alt="" />
+                    </div>
+
+                    <div class="menu__product-list">
+                        <!-- Button -->
+                        <button class="menu__btn btn btn--circle d-md-none">
+                            <img
+                                src="./assets/icons/right-arrow.svg"
+                                alt=""
+                                class="menu__btn-icon menu__btn-icon--reverse"
+                            />
+                        </button>
+                        <button
+                            class="menu__btn menu__btn--right btn btn--circle d-md-none"
+                        >
+                            <img
+                                src="./assets/icons/right-arrow.svg"
+                                alt=""
+                                class="menu__btn-icon"
+                            />
+                        </button>
+
+                        <!-- List -->
+                        <div class="menu__row">
+                            <!-- Product info 1 -->
+                            <div class="menu__col">
+                                <article class="product-info">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/menu-page/product-1.png"
+                                            alt=""
+                                            class="product-info__thumb"
+                                        />
+                                    </a>
+                                    <div class="product-info__row">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="product-info__title"
+                                            >
+                                                Egg Frittata Muffins. PIN IT
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="product-info__desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+
+                                    <div class="separate"></div>
+
+                                    <div
+                                        class="product-info__row product-info__row--margin-top"
+                                    >
+                                        <a
+                                            href="#!"
+                                            class="btn btn--text btn--text-white product-info__btn"
+                                        >
+                                            Order Now
+                                        </a>
+
+                                        <span class="product-info__price">
+                                            $24
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Product info 2 -->
+                            <div class="menu__col">
+                                <article class="product-info">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/menu-page/product-2.png"
+                                            alt=""
+                                            class="product-info__thumb"
+                                        />
+                                    </a>
+                                    <div class="product-info__row">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="product-info__title"
+                                            >
+                                                Breakfast Bars. PIN IT
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="product-info__desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+
+                                    <div class="separate"></div>
+
+                                    <div
+                                        class="product-info__row product-info__row--margin-top"
+                                    >
+                                        <a
+                                            href="#!"
+                                            class="btn btn--text btn--text-white product-info__btn"
+                                        >
+                                            Order Now
+                                        </a>
+
+                                        <span class="product-info__price">
+                                            $29
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Product info 3 -->
+                            <div class="menu__col">
+                                <article class="product-info">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/menu-page/product-3.png"
+                                            alt=""
+                                            class="product-info__thumb"
+                                        />
+                                    </a>
+                                    <div class="product-info__row">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="product-info__title"
+                                            >
+                                                Breakfast Sandwiches
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="product-info__desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+
+                                    <div class="separate"></div>
+
+                                    <div
+                                        class="product-info__row product-info__row--margin-top"
+                                    >
+                                        <a
+                                            href="#!"
+                                            class="btn btn--text btn--text-white product-info__btn"
+                                        >
+                                            Order Now
+                                        </a>
+
+                                        <span class="product-info__price">
+                                            $19
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Bottom -->
+                        <div class="dots d-none d-md-flex">
+                            <div class="dot dot--current"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Starters -->
+            <section class="menu__starters">
+                <div class="container">
+                    <!-- Heading -->
+                    <div class="top-center">
+                        <h1 class="heading heading--lv2">Starters</h1>
+                        <img src="./assets/icons/menu-decor-1.svg" alt="" />
+                    </div>
+
+                    <div class="menu__product-list">
+                        <!-- Button -->
+                        <button class="menu__btn btn btn--circle d-md-none">
+                            <img
+                                src="./assets/icons/right-arrow.svg"
+                                alt=""
+                                class="menu__btn-icon menu__btn-icon--reverse"
+                            />
+                        </button>
+                        <button
+                            class="menu__btn menu__btn--right btn btn--circle d-md-none"
+                        >
+                            <img
+                                src="./assets/icons/right-arrow.svg"
+                                alt=""
+                                class="menu__btn-icon"
+                            />
+                        </button>
+
+                        <!-- List -->
+                        <div class="menu__row">
+                            <!-- Product info 1 -->
+                            <div class="menu__col">
+                                <article class="product-info">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/menu-page/product-1.png"
+                                            alt=""
+                                            class="product-info__thumb"
+                                        />
+                                    </a>
+                                    <div class="product-info__row">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="product-info__title"
+                                            >
+                                                Egg Frittata Muffins. PIN IT
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="product-info__desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+
+                                    <div class="separate"></div>
+
+                                    <div
+                                        class="product-info__row product-info__row--margin-top"
+                                    >
+                                        <a
+                                            href="#!"
+                                            class="btn btn--text btn--text-white product-info__btn"
+                                        >
+                                            Order Now
+                                        </a>
+
+                                        <span class="product-info__price">
+                                            $24
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Product info 2 -->
+                            <div class="menu__col">
+                                <article class="product-info">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/menu-page/product-2.png"
+                                            alt=""
+                                            class="product-info__thumb"
+                                        />
+                                    </a>
+                                    <div class="product-info__row">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="product-info__title"
+                                            >
+                                                Breakfast Bars. PIN IT
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="product-info__desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+
+                                    <div class="separate"></div>
+
+                                    <div
+                                        class="product-info__row product-info__row--margin-top"
+                                    >
+                                        <a
+                                            href="#!"
+                                            class="btn btn--text btn--text-white product-info__btn"
+                                        >
+                                            Order Now
+                                        </a>
+
+                                        <span class="product-info__price">
+                                            $29
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Product info 3 -->
+                            <div class="menu__col">
+                                <article class="product-info">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/menu-page/product-3.png"
+                                            alt=""
+                                            class="product-info__thumb"
+                                        />
+                                    </a>
+                                    <div class="product-info__row">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="product-info__title"
+                                            >
+                                                Breakfast Sandwiches
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="product-info__desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+
+                                    <div class="separate"></div>
+
+                                    <div
+                                        class="product-info__row product-info__row--margin-top"
+                                    >
+                                        <a
+                                            href="#!"
+                                            class="btn btn--text btn--text-white product-info__btn"
+                                        >
+                                            Order Now
+                                        </a>
+
+                                        <span class="product-info__price">
+                                            $19
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Bottom -->
+                        <div class="dots d-none d-md-flex">
+                            <div class="dot dot--current"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <script></script>
+    </body>
+</html>
