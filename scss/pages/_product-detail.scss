@@ -1,0 +1,206 @@
+@use "../abstracts";
+
+.product {
+    &-container {
+        margin-top: 100px;
+    }
+
+    &-preview {
+        width: 100%;
+
+        &__img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &-properties {
+        margin-top: 40px;
+
+        @include abstracts.screen(xl) {
+            margin-top: 20px;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-top: 40px;
+        }
+    }
+
+    &-property {
+        &__name {
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 155.556%; /* 155.556% */
+
+            @include abstracts.screen(xl) {
+                font-size: 1.6rem;
+            }
+
+            @include abstracts.screen(lg) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    &-property + &-property {
+        margin-top: 12px;
+
+        @include abstracts.screen(xl) {
+            margin-top: 10px;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-top: 12px;
+        }
+    }
+
+    &-tab {
+        position: relative;
+
+        &__list {
+            display: flex;
+            align-items: center;
+
+            margin: 0 -21px;
+            padding-bottom: 16px;
+        }
+
+        &__item {
+            position: relative;
+            padding: 0 21px;
+
+            &--current::before {
+                content: "";
+                position: absolute;
+
+                bottom: -16px;
+
+                display: block;
+                height: 1px;
+                width: calc(100% - 42px);
+                background: #fb8f2c;
+            }
+        }
+
+        &__contents {
+            padding-top: 31px;
+        }
+
+        &__text-content {
+            margin-top: -30px;
+        }
+
+        &__separate {
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+.product-info {
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        flex-wrap: wrap;
+    }
+
+    &__heading {
+        max-width: 570px;
+        margin-bottom: 9px;
+
+        @include abstracts.screen(xl) {
+            font-size: 4.6rem;
+        }
+
+        @include abstracts.screen(lg) {
+            font-size: 6.4rem;
+        }
+
+        @include abstracts.screen(sm) {
+            font-size: 3.6rem;
+        }
+    }
+
+    &__price {
+        margin-top: 20px;
+
+        color: #fff;
+        font-family: "Libre Bodoni", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 141.667%; /* 141.667% */
+
+        @include abstracts.screen(xl) {
+            margin-top: 10px;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-top: 20px;
+        }
+    }
+
+    &__desc {
+        max-width: 570px;
+
+        margin-top: 20px;
+        line-height: 162.5%; /* 162.5% */
+
+        @include abstracts.screen(xl) {
+            margin-top: 15px;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-top: 20px;
+        }
+
+        @include abstracts.screen(sm) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__stepper-input {
+        margin-top: 52px;
+
+        @include abstracts.screen(xl) {
+            margin-top: 20px;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-top: 52px;
+        }
+
+        @include abstracts.screen(sm) {
+            margin-top: 42px;
+        }
+    }
+
+    &__btn {
+        font-weight: 600;
+
+        background: #fb8f2c;
+    }
+
+    &__stars {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        margin-right: 8px;
+    }
+
+    &__star {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 171.429%; /* 171.429% */
+    }
+}

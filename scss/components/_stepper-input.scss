@@ -1,0 +1,26 @@
+.stepper-input {
+    --height: 46px;
+    --input-width: 52px;
+
+    display: flex;
+
+    &__input {
+        width: var(--input-width);
+        text-align: center;
+
+        border: 1px solid #ffffffcc;
+        border-left: none;
+        border-right: none;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: var(--height);
+        height: var(--height);
+
+        border: 1px solid #ffffffcc;
+    }
+}

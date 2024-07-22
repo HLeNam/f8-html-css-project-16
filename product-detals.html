@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restaurant</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Embed Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- Main -->
+        <main class="product-page">
+            <div class="container">
+                <div class="product-container">
+                    <div class="row gy-lg-4">
+                        <div class="col-6 col-xl-6 col-lg-12">
+                            <div class="product-preview">
+                                <div class="product-preview__list">
+                                    <div class="product-preview__item">
+                                        <img
+                                            src="./assets/img/product/product-4.png"
+                                            alt=""
+                                            class="product-preview__img"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-6 col-lg-12">
+                            <form action="" class="form">
+                                <section class="product-info">
+                                    <h1
+                                        class="product-info__heading heading heading--lv2"
+                                    >
+                                        Crispy chicken breasts
+                                    </h1>
+                                    <div class="product-info__row">
+                                        <div class="product-info__stars">
+                                            <img
+                                                src="./assets/icons/yellow-star.svg"
+                                                alt=""
+                                                class="product-info__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/yellow-star.svg"
+                                                alt=""
+                                                class="product-info__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/yellow-star.svg"
+                                                alt=""
+                                                class="product-info__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/yellow-star.svg"
+                                                alt=""
+                                                class="product-info__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/yellow-star.svg"
+                                                alt=""
+                                                class="product-info__star"
+                                            />
+                                        </div>
+
+                                        <span class="product-info__text">
+                                            ( 1 customer review )
+                                        </span>
+                                    </div>
+
+                                    <p class="product-info__price">$ 54.00</p>
+
+                                    <p class="product-info__desc">
+                                        Aliquam quaerat voluptatem. Ut enim ad
+                                        minima veniam, quis nostrum
+                                        exercitationem ullam corporis suscipit
+                                        laboriosam, nisi ut aliquid ex ea
+                                        commodi consequatur uis autem vel eum
+                                        iure reprehenderit.
+                                    </p>
+
+                                    <div
+                                        class="product-info__row product-info__stepper-input"
+                                    >
+                                        <div class="stepper-input">
+                                            <button
+                                                class="stepper-input__button"
+                                            >
+                                                <img
+                                                    src="./assets/icons/sub-icon.svg"
+                                                    alt=""
+                                                    class="stepper-input__icon"
+                                                />
+                                            </button>
+                                            <input
+                                                type="text"
+                                                name="number-product"
+                                                id="number-product"
+                                                value="1"
+                                                class="stepper-input__input"
+                                            />
+                                            <button
+                                                class="stepper-input__button"
+                                            >
+                                                <img
+                                                    src="./assets/icons/plus-icon.svg"
+                                                    alt=""
+                                                    class="stepper-input__icon"
+                                                />
+                                            </button>
+                                        </div>
+
+                                        <button
+                                            class="product-info__btn btn btn--primary"
+                                        >
+                                            ADD TO CARD
+                                        </button>
+                                    </div>
+
+                                    <div class="product-properties">
+                                        <div class="product-property">
+                                            <p class="product-property__text">
+                                                <strong
+                                                    class="product-property__name"
+                                                >
+                                                    SKU:
+                                                </strong>
+                                                PT322
+                                            </p>
+                                        </div>
+                                        <div class="product-property">
+                                            <p class="product-property__text">
+                                                <strong
+                                                    class="product-property__name"
+                                                >
+                                                    CATEGORY:
+                                                </strong>
+                                                Lunch
+                                            </p>
+                                        </div>
+                                        <div class="product-property">
+                                            <p class="product-property__text">
+                                                <strong
+                                                    class="product-property__name"
+                                                >
+                                                    TAGS:
+                                                </strong>
+                                                Sweets,Gheva
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-tab">
+                        <ul class="product-tab__list">
+                            <li class="product-tab__item">Description</li>
+                            <li
+                                class="product-tab__item product-tab__item--current"
+                            >
+                                Reviews (1)
+                            </li>
+                        </ul>
+
+                        <div class="separate product-tab__separate"></div>
+                    </div>
+
+                    <div class="product-tab__contents">
+                        <!-- Description (đang bị d-none) -->
+                        <div
+                            class="product-tab__content product-tab__content--current d-none"
+                        >
+                            <div class="text-content product-tab__text-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget
+                                    dolor. Aenean massa. Cum sociis natoque
+                                    penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Donec quam felis,
+                                    ultricies nec, pellentesque eu, pretium
+                                    quis, sem. Nulla consequat massa quis enim.
+                                    Donec pede justo, fringilla vel, aliquet
+                                    nec, vulputate eget, arcu. In enim justo,
+                                    rhoncus ut, imperdiet a, venenatis vitae,
+                                    justo. Nullam dictum felis eu pede mollis
+                                    pretium. Integer tincidunt.
+                                </p>
+
+                                <p>
+                                    Cras dapibus. Vivamus elementum semper nisi.
+                                    Aenean vulputate eleifend tellus. Aenean leo
+                                    ligula, porttitor eu, consequat vitae,
+                                    eleifend ac, enim. Aliquam lorem ante,
+                                    dapibus in, viverra quis, feugiat a, tellus.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Reviews -->
+                        <div class="product-tab__content"></div>
+                    </div>
+                </div>
+
+                <!-- Related Items -->
+                <div class="product-container">
+                    <h2 class="heading heading--lv4 heading--margin">
+                        Related Items
+                    </h2>
+
+                    <div class="row gx-lg-2 gy-md-3 row-cols-3 row-cols-md-1">
+                        <!-- Product info 1 -->
+                        <div class="col">
+                            <article class="product-card">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product/product-5.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__row">
+                                    <h3>
+                                        <a
+                                            href="#!"
+                                            class="product-card__title"
+                                        >
+                                            Schezwan Noodles
+                                        </a>
+                                    </h3>
+                                </div>
+                                <p class="product-card__desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+
+                                <div class="separate"></div>
+
+                                <div
+                                    class="product-card__row product-card__row--margin-top"
+                                >
+                                    <a
+                                        href="#!"
+                                        class="btn btn--text product-card__btn"
+                                    >
+                                        Order Now
+                                    </a>
+
+                                    <span class="product-card__price">
+                                        $54
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Product info 2 -->
+                        <div class="col">
+                            <article class="product-card">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product/product-6.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__row">
+                                    <h3>
+                                        <a
+                                            href="#!"
+                                            class="product-card__title"
+                                        >
+                                            Schezwan Noodles
+                                        </a>
+                                    </h3>
+                                </div>
+                                <p class="product-card__desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+
+                                <div class="separate"></div>
+
+                                <div
+                                    class="product-card__row product-card__row--margin-top"
+                                >
+                                    <a
+                                        href="#!"
+                                        class="btn btn--text product-card__btn"
+                                    >
+                                        Order Now
+                                    </a>
+
+                                    <span class="product-card__price">
+                                        $59
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Product info 3 -->
+                        <div class="col">
+                            <article class="product-card">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product/product-5.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__row">
+                                    <h3>
+                                        <a
+                                            href="#!"
+                                            class="product-card__title"
+                                        >
+                                            Schezwan Noodles
+                                        </a>
+                                    </h3>
+                                </div>
+                                <p class="product-card__desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+
+                                <div class="separate"></div>
+
+                                <div
+                                    class="product-card__row product-card__row--margin-top"
+                                >
+                                    <a
+                                        href="#!"
+                                        class="btn btn--text product-card__btn"
+                                    >
+                                        Order Now
+                                    </a>
+
+                                    <span class="product-card__price">
+                                        $54
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <script></script>
+    </body>
+</html>
