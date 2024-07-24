@@ -202,12 +202,12 @@
                 <div class="product-container">
                     <div class="product-tab">
                         <ul class="product-tab__list">
-                            <li class="product-tab__item">Description</li>
                             <li
                                 class="product-tab__item product-tab__item--current"
                             >
-                                Reviews (1)
+                                Description
                             </li>
+                            <li class="product-tab__item">Reviews (1)</li>
                         </ul>
 
                         <div class="separate product-tab__separate"></div>
@@ -216,7 +216,7 @@
                     <div class="product-tab__contents">
                         <!-- Description (đang bị d-none) -->
                         <div
-                            class="product-tab__content product-tab__content--current d-none"
+                            class="product-tab__content product-tab__content--current"
                         >
                             <div class="text-content product-tab__text-content">
                                 <p>
@@ -245,7 +245,220 @@
                         </div>
 
                         <!-- Reviews -->
-                        <div class="product-tab__content"></div>
+                        <div class="product-tab__content d-none">
+                            <div class="review-comment__list">
+                                <!-- Comment 1 -->
+                                <div class="review-comment">
+                                    <!-- User -->
+                                    <div class="review-comment__user">
+                                        <img
+                                            src="./assets/img/user/user-avatar-1.jpg"
+                                            alt=""
+                                            class="review-comment__avatar"
+                                        />
+                                    </div>
+
+                                    <!-- Content -->
+                                    <div class="review-comment__content">
+                                        <div class="review-comment__row">
+                                            <h2 class="review-comment__heading">
+                                                Jamie Milson
+                                            </h2>
+
+                                            <span class="review-comment__date">
+                                                March 18, 2022
+                                            </span>
+                                        </div>
+
+                                        <div class="review-comment__desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetuer adipiscing elit. Aenean
+                                            commodo ligula eget dolor. Aenean
+                                            massa. Cum sociis natoque penatibus
+                                            et magnis dis parturient montes,
+                                            nascetur ridiculus mus.
+                                        </div>
+
+                                        <div class="product-info__stars">
+                                            <img
+                                                src="./assets/icons/yellow-star.svg"
+                                                alt=""
+                                                class="product-info__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/yellow-star.svg"
+                                                alt=""
+                                                class="product-info__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/yellow-star.svg"
+                                                alt=""
+                                                class="product-info__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/yellow-star.svg"
+                                                alt=""
+                                                class="product-info__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/yellow-star.svg"
+                                                alt=""
+                                                class="product-info__star"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Form Add Review -->
+                            <form action="" class="form product-tab__form">
+                                <h3 class="product-tab__form-heading">
+                                    Add a review
+                                </h3>
+                                <p class="product-tab__form-desc">
+                                    Your email address will not be published.
+                                    Required fields are marked *
+                                </p>
+
+                                <div
+                                    class="row row-cols-3 row-cols-lg-2 row-cols-md-1 gy-lg-3"
+                                >
+                                    <!-- Name form -->
+                                    <div class="col">
+                                        <div class="form__group">
+                                            <label
+                                                for="name"
+                                                class="form__label"
+                                            >
+                                                Your name *
+                                            </label>
+                                            <div class="form__text-input">
+                                                <input
+                                                    type="text"
+                                                    id="name"
+                                                    class="form__input"
+                                                />
+                                                <img
+                                                    src="./assets/icons/user-icon.svg"
+                                                    alt=""
+                                                    class="form__input-icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Email form -->
+                                    <div class="col">
+                                        <div class="form__group">
+                                            <label
+                                                for="email"
+                                                class="form__label"
+                                            >
+                                                Email address *
+                                            </label>
+                                            <div class="form__text-input">
+                                                <input
+                                                    type="email"
+                                                    id="email"
+                                                    class="form__input"
+                                                />
+                                                <img
+                                                    src="./assets/icons/letter-icon.svg"
+                                                    alt=""
+                                                    class="form__input-icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Website form -->
+                                    <div class="col">
+                                        <div class="form__group">
+                                            <label
+                                                for="website"
+                                                class="form__label"
+                                            >
+                                                Website *
+                                            </label>
+                                            <div class="form__text-input">
+                                                <input
+                                                    type="text"
+                                                    id="website"
+                                                    class="form__input"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form__row product-tab__form-rating">
+                                    <span>Your rating</span>
+                                    <div class="product-info__stars">
+                                        <img
+                                            src="./assets/icons/yellow-star.svg"
+                                            alt=""
+                                            class="product-info__star"
+                                        />
+                                        <img
+                                            src="./assets/icons/yellow-half-star.svg"
+                                            alt=""
+                                            class="product-info__star"
+                                        />
+                                        <img
+                                            src="./assets/icons/yellow-half-star.svg"
+                                            alt=""
+                                            class="product-info__star"
+                                        />
+                                        <img
+                                            src="./assets/icons/yellow-half-star.svg"
+                                            alt=""
+                                            class="product-info__star"
+                                        />
+                                        <img
+                                            src="./assets/icons/yellow-half-star.svg"
+                                            alt=""
+                                            class="product-info__star"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="form__group product-tab__form-text-area"
+                                >
+                                    <label for="review" class="form__label">
+                                        Wirte review *
+                                    </label>
+                                    <div class="form__text-area">
+                                        <textarea
+                                            name="review"
+                                            id=""
+                                            class="form__text-area-input"
+                                            required
+                                        ></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form__group form__group--inline">
+                                    <label class="form__checkbox">
+                                        <input
+                                            type="checkbox"
+                                            name=""
+                                            id=""
+                                            class="form__checkbox-input d-none"
+                                        />
+                                        <span class="form__checkbox-label"
+                                            >Save my name, email, and website in
+                                            this browser for the next time I
+                                            comment.
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <button
+                                    class="btn btn--primary product-tab__form-submit"
+                                >
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
 

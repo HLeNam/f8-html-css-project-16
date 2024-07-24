@@ -1656,39 +1656,108 @@ input:-webkit-autofill:hover {
   flex-direction: row-reverse;
 }
 
-.form__text-input {
+.form__text-input, .form__text-area {
   display: flex;
   align-items: center;
   height: 54px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.form__input {
+.form__text-input:focus-within, .form__text-area:focus-within {
+  border-bottom-color: #fff;
+}
+.form__text-area {
+  height: 150px;
+  padding: 12px 0;
+}
+.form__text-area-input {
+  resize: none;
+}
+.form__input, .form__text-area-input {
   display: flex;
-  align-items: flex-start;
   width: 100%;
   height: 100%;
   font-size: 1.8rem;
   color: rgba(255, 255, 255, 0.8);
 }
 @media (max-width: 575.98px) {
-  .form__input {
+  .form__input, .form__text-area-input {
     font-size: 1.6rem;
   }
 }
-.form__input::placeholder {
+.form__input::placeholder, .form__text-area-input::placeholder {
   font-size: 1.8rem;
   color: rgba(255, 255, 255, 0.8);
   line-height: 162.5%; /* 162.5% */
 }
 @media (max-width: 575.98px) {
-  .form__input::placeholder {
+  .form__input::placeholder, .form__text-area-input::placeholder {
     font-size: 1.6rem;
   }
 }
-.form__input-icon {
+.form__input-icon, .form__text-area-input-icon {
   width: 54px;
   height: 24px;
   margin-left: 12px;
+}
+.form__checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.form__checkbox:has(:checked)::before {
+  border-color: rgba(251, 143, 44, 0.8);
+  background: rgba(251, 143, 44, 0.8);
+}
+.form__checkbox::before, .form__checkbox::after {
+  content: "";
+  position: absolute;
+}
+.form__checkbox::before {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.form__checkbox:has(:checked)::after {
+  width: 15px;
+  height: 8px;
+  border: 3px solid;
+  border-color: transparent transparent #fff #fff;
+  rotate: -45deg;
+  top: 0;
+  left: 3.4px;
+}
+@media (max-width: 767.98px) {
+  .form__checkbox:has(:checked)::after {
+    top: 8px;
+  }
+}
+@media (max-width: 575.98px) {
+  .form__checkbox:has(:checked)::after {
+    top: 7px;
+  }
+}
+@media (max-width: 324.98px) {
+  .form__checkbox:has(:checked)::after {
+    top: 13px;
+  }
+}
+.form__checkbox-label {
+  margin-left: 32px;
+}
+@media (max-width: 767.98px) {
+  .form__checkbox-label {
+    font-size: 1.4rem;
+  }
+}
+.form__group--inline {
+  display: flex;
+  align-items: center;
+}
+.form__row {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -1791,6 +1860,65 @@ input:-webkit-autofill:hover {
   height: 1px;
   margin: 40px 0;
   background: var(--text-content-hr-bg-color);
+}
+
+.review-comment {
+  display: flex;
+  gap: 18px;
+}
+.review-comment__user {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.review-comment__avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+.review-comment__content {
+  flex-grow: 1;
+}
+.review-comment__heading {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 155.556%; /* 155.556% */
+}
+@media (max-width: 350px) {
+  .review-comment__heading {
+    font-size: 1.4rem;
+  }
+}
+.review-comment__date {
+  position: relative;
+  top: 1px;
+  margin-left: 28px;
+  font-size: 1.4rem;
+  line-height: 171.429%; /* 171.429% */
+}
+.review-comment__date::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateX(-100%);
+  display: block;
+  width: 8px;
+  height: 1px;
+  background: #fff;
+}
+.review-comment__desc {
+  margin-top: 18px;
+  margin-bottom: 20px;
+  line-height: 162.5%; /* 162.5% */
+}
+.review-comment__row {
+  display: flex;
+  align-items: center;
 }
 
 .top-bar {
@@ -3492,6 +3620,34 @@ input:-webkit-autofill:hover {
 }
 .product-tab {
   position: relative;
+}
+.product-tab__form {
+  margin-top: 60px;
+}
+.product-tab__form-heading {
+  font-family: "Libre Bodoni", sans-serif;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 34px; /* 141.667% */
+}
+.product-tab__form-desc {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  line-height: 162.5%; /* 162.5% */
+}
+.product-tab__form-rating {
+  margin-top: 36px;
+  gap: 10px;
+}
+.product-tab__form-text-area {
+  margin-top: 50px;
+  margin-bottom: 26px;
+}
+.product-tab__form-submit {
+  margin-top: 36px;
+  font-weight: 600;
+  background: rgba(251, 143, 44, 0.8);
 }
 .product-tab__list {
   display: flex;

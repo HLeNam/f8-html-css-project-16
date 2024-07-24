@@ -57,6 +57,41 @@
     &-tab {
         position: relative;
 
+        &__form {
+            margin-top: 60px;
+
+            &-heading {
+                font-family: "Libre Bodoni", sans-serif;
+
+                color: #fff;
+                font-size: 2.4rem;
+                font-weight: 500;
+                line-height: 34px; /* 141.667% */
+            }
+
+            &-desc {
+                margin-top: 16px;
+                margin-bottom: 24px;
+                line-height: 162.5%; /* 162.5% */
+            }
+
+            &-rating {
+                margin-top: 36px;
+                gap: 10px;
+            }
+
+            &-text-area {
+                margin-top: 50px;
+                margin-bottom: 26px;
+            }
+
+            &-submit {
+                margin-top: 36px;
+                font-weight: 600;
+                background: rgba(251, 143, 44, 0.8);
+            }
+        }
+
         &__list {
             display: flex;
             align-items: center;
