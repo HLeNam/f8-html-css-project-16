@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restaurant</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Embed Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- Main -->
+        <main class="checkout-page">
+            <div class="container">
+                <div class="row">
+                    <!-- Form col -->
+                    <div class="col-6 col-lg-12">
+                        <form action="" class="form checkout-form">
+                            <h2 class="heading heading--lv4 heading--margin">
+                                Billing details
+                            </h2>
+
+                            <div class="form__group form__group--margin">
+                                <div class="row row-cols-2 row-cols-sm-1 gy-3">
+                                    <div class="col">
+                                        <label for="name" class="form__label">
+                                            Your name *
+                                        </label>
+                                        <div class="form__text-input">
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                class="form__input"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label
+                                            for="last-name"
+                                            class="form__label"
+                                        >
+                                            Last name *
+                                        </label>
+                                        <div class="form__text-input">
+                                            <input
+                                                type="text"
+                                                id="last-name"
+                                                class="form__input"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Company name (optional) -->
+                            <div class="form__group form__group--margin">
+                                <label for="company-name" class="form__label">
+                                    Company name (optional)
+                                </label>
+                                <div class="form__text-input">
+                                    <input
+                                        type="text"
+                                        id="company-name"
+                                        class="form__input"
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- Country / Region * -->
+                            <div class="form__group form__group--margin">
+                                <label for="region-name" class="form__label">
+                                    Country / Region *
+                                </label>
+                                <div class="form__text-input">
+                                    <input
+                                        type="text"
+                                        id="region-name"
+                                        class="form__input"
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- Street address * -->
+                            <div class="form__group form__group--margin">
+                                <label for="address" class="form__label">
+                                    Street address *
+                                </label>
+                                <div class="form__text-input">
+                                    <input
+                                        name="address"
+                                        type="text"
+                                        class="form__input"
+                                        placeholder="Australia"
+                                    />
+                                    <img
+                                        src="./assets/icons/down-arrow-white.svg"
+                                        alt=""
+                                        class="form__input-icon"
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- Street address * -->
+                            <div class="form__group form__group--margin">
+                                <label for="street" class="form__label">
+                                    Street address *
+                                </label>
+                                <div class="form__text-input">
+                                    <input
+                                        name="street"
+                                        type="text"
+                                        class="form__input"
+                                        placeholder="House number and street name"
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- Town / City * -->
+                            <div class="form__group form__group--margin">
+                                <label for="town-city" class="form__label">
+                                    Town / City *
+                                </label>
+                                <div class="form__text-input">
+                                    <input
+                                        type="text"
+                                        name="town-city"
+                                        class="form__input"
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- District * -->
+                            <div class="form__group form__group--margin">
+                                <label for="district" class="form__label">
+                                    District *
+                                </label>
+                                <div class="form__text-input">
+                                    <input
+                                        name="district"
+                                        type="text"
+                                        class="form__input"
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- Postcode / ZIP (optional) -->
+                            <div class="form__group form__group--margin">
+                                <label for="postcode" class="form__label">
+                                    Postcode / ZIP (optional)
+                                </label>
+                                <div class="form__text-input">
+                                    <input
+                                        name="postcode"
+                                        type="text"
+                                        class="form__input"
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- Phone * -->
+                            <div class="form__group form__group--margin">
+                                <label for="phone" class="form__label">
+                                    Phone *
+                                </label>
+                                <div class="form__text-input">
+                                    <input
+                                        name="phone"
+                                        type="number"
+                                        class="form__input"
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- Email address * -->
+                            <div class="form__group form__group--margin">
+                                <label for="email" class="form__label">
+                                    Email address *
+                                </label>
+                                <div class="form__text-input">
+                                    <input type="email" class="form__input" />
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="" class="form checkout-form__payments">
+                            <div class="checkout-form__chooses">
+                                <div class="form__row">
+                                    <label class="form__radio">
+                                        <input
+                                            type="radio"
+                                            name="payment-methods"
+                                            id=""
+                                            class="form__radio-input checkout-form__radio"
+                                        />
+                                        <div class="checkout-form__content">
+                                            <h3 class="checkout-form__title">
+                                                Direct bank transfer
+                                            </h3>
+                                            <p class="checkout-form__desc">
+                                                Make your payment directly into
+                                                our bank account. Please use
+                                                your Order ID as the payment
+                                                reference. Your order will not
+                                                be shipped until the funds have
+                                                cleared in our account.
+                                            </p>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="form__row">
+                                    <label class="form__radio">
+                                        <input
+                                            type="radio"
+                                            name="payment-methods"
+                                            id=""
+                                            class="form__radio-input checkout-form__radio"
+                                        />
+                                        <div class="checkout-form__content">
+                                            <h3 class="checkout-form__title">
+                                                Check payments
+                                            </h3>
+                                            <p class="checkout-form__desc">
+                                                Make your payment directly into
+                                                our bank account. Please use
+                                                your Order ID as the payment
+                                                reference. Your order will not
+                                                be shipped until the funds have
+                                                cleared in our account.
+                                            </p>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="form__row">
+                                    <label class="form__radio">
+                                        <input
+                                            type="radio"
+                                            name="payment-methods"
+                                            id=""
+                                            class="form__radio-input checkout-form__radio"
+                                        />
+                                        <div class="checkout-form__content">
+                                            <h3 class="checkout-form__title">
+                                                Cash on delivery
+                                            </h3>
+                                            <p class="checkout-form__desc">
+                                                Make your payment directly into
+                                                our bank account. Please use
+                                                your Order ID as the payment
+                                                reference. Your order will not
+                                                be shipped until the funds have
+                                                cleared in our account.
+                                            </p>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="form__row">
+                                    <label class="form__radio">
+                                        <input
+                                            type="radio"
+                                            name="payment-methods"
+                                            id=""
+                                            class="form__radio-input checkout-form__radio"
+                                        />
+                                        <div class="checkout-form__content">
+                                            <h3 class="checkout-form__title">
+                                                PayPal
+                                            </h3>
+                                            <p class="checkout-form__desc">
+                                                Make your payment directly into
+                                                our bank account. Please use
+                                                your Order ID as the payment
+                                                reference. Your order will not
+                                                be shipped until the funds have
+                                                cleared in our account.
+                                            </p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <p class="checkout-form__desc-policy">
+                                Your personal data will be used to process your
+                                order, support your experience throughout this
+                                website, and for other purposes described in our
+                                <a href="#!" class="checkout-form__policy">
+                                    privacy policy</a
+                                >.
+                            </p>
+
+                            <a
+                                href="#!"
+                                class="btn btn btn--primary checkout-form__submit"
+                            >
+                                Place order
+                            </a>
+                        </form>
+                    </div>
+
+                    <!-- Summary col -->
+                    <div class="col-5 col-xl-6 col-lg-12 offset-1 offset-xl-0">
+                        <div class="checkout-cart">
+                            <h2 class="heading heading--lv4">Your order</h2>
+
+                            <table class="checkout-cart__table">
+                                <thead>
+                                    <tr class="checkout-cart__row">
+                                        <th class="checkout-cart__title">
+                                            Food
+                                        </th>
+                                        <th class="checkout-cart__title">
+                                            Subtotal
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="checkout-cart__row">
+                                        <td class="checkout-cart__value">
+                                            Crispy chicken breasts
+                                            <span class="checkout-cart__qty">
+                                                x 1
+                                            </span>
+                                        </td>
+                                        <td class="checkout-cart__value">
+                                            $24.99
+                                        </td>
+                                    </tr>
+                                    <tr class="checkout-cart__row">
+                                        <td class="checkout-cart__value">
+                                            Spaghetti Napoletana
+                                            <span class="checkout-cart__qty">
+                                                x 1
+                                            </span>
+                                        </td>
+                                        <td class="checkout-cart__value">
+                                            $59.00
+                                        </td>
+                                    </tr>
+                                    <tr class="checkout-cart__row">
+                                        <td class="checkout-cart__value">
+                                            Subtotal
+                                        </td>
+                                        <td class="checkout-cart__value">
+                                            $59.00
+                                        </td>
+                                    </tr>
+                                    <tr class="checkout-cart__row">
+                                        <td class="checkout-cart__value">
+                                            Shipping
+                                        </td>
+                                        <td class="checkout-cart__value">
+                                            Flat rate: $6.00
+                                        </td>
+                                    </tr>
+                                    <tr class="checkout-cart__row">
+                                        <td class="checkout-cart__value">
+                                            Total
+                                        </td>
+                                        <td class="checkout-cart__value">
+                                            $89.99
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <script></script>
+    </body>
+</html>

@@ -1,0 +1,215 @@
+@use "../abstracts";
+
+.cart-table {
+    margin-top: 113px;
+
+    &__container {
+        border: 1px solid rgba($color: #fff, $alpha: 0.2);
+        // opacity: 0.3;
+        background: rgba(255, 255, 255, 0.03);
+
+        margin-bottom: 100px;
+    }
+
+    &__body {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: auto repeat(5, 1fr);
+
+        color: #fff;
+        line-height: 162.5%; /* 162.5% */
+
+        @include abstracts.screen(xl) {
+            grid-template-columns: repeat(6, auto);
+        }
+
+        @include abstracts.screen(lg) {
+            grid-template-columns: auto repeat(5, auto);
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 20px;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+
+        &:first-of-type {
+            height: 76px;
+        }
+
+        &:not(:first-child) {
+            height: 186px;
+        }
+
+        @include abstracts.screen(md) {
+            justify-content: space-between;
+
+            height: initial !important;
+            border-bottom: none;
+        }
+    }
+
+    &__heading {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 155.556%; /* 155.556% */
+    }
+
+    &__product {
+        &-img {
+            width: 130px;
+            height: 130px;
+
+            @include abstracts.screen(lg) {
+                width: 90px;
+                height: 90px;
+            }
+
+            object-fit: cover;
+        }
+    }
+
+    &__delete-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 40px;
+
+        @include abstracts.screen(lg) {
+            padding: 20px;
+        }
+
+        @include abstracts.screen(md) {
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__cta {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 28px 40px;
+
+        @include abstracts.screen(md) {
+            padding: 20px;
+
+            row-gap: 20px;
+            column-gap: 15px;
+        }
+
+        &-btn {
+            --height: 42px;
+
+            &:first-of-type {
+                padding-right: 54px;
+                padding-left: 12px;
+                background: rgba(255, 255, 255, 0.1);
+
+                @include abstracts.screen(sm) {
+                    padding-right: 28px;
+                    padding-left: 10px;
+                }
+            }
+
+            &:nth-last-of-type(2) {
+                margin-left: 26px;
+
+                font-weight: 600;
+                background: #fb8f2c;
+
+                @include abstracts.screen(md) {
+                    margin-left: 0px;
+                }
+
+                @include abstracts.screen(sm) {
+                    padding: 8px 20px;
+                }
+            }
+
+            &:last-of-type {
+                margin-left: auto;
+                font-weight: 600;
+                opacity: 0.7;
+                background: var(--Dark-Orange, #fb8f2c);
+            }
+
+            @include abstracts.screen(md) {
+                flex: 1;
+            }
+        }
+    }
+}
+
+.checkout-summary {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid rgba($color: #fff, $alpha: 0.2);
+    // opacity: 0.3;
+    background: rgba(255, 255, 255, 0.03);
+
+    color: #fff;
+    line-height: 162.5%; /* 162.5% */
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        padding: 28px 20px 28px 28px;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+
+        @include abstracts.screen(sm) {
+            padding: 28px 20px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 14px;
+
+        &--strong {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+
+        margin-top: 30px;
+    }
+
+    &__icon {
+        margin-left: 10px;
+    }
+
+    &__submit-btn {
+        color: #111114;
+        font-weight: 600;
+
+        background: #fff;
+    }
+
+    &__process-btn {
+        margin-top: 22px;
+
+        width: 100%;
+
+        font-weight: 600;
+        background: #fb8f2c;
+    }
+}

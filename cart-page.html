@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restaurant</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Embed Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <main class="cart-page">
+            <div class="cart-table">
+                <div class="container">
+                    <!-- Table -->
+                    <div class="cart-table__container">
+                        <div class="cart-table__body d-md-none">
+                            <div class="cart-table__col">
+                                <div class="cart-table__row"></div>
+                                <div class="cart-table__row">
+                                    <button class="cart-table__delete-btn">
+                                        <img
+                                            src="./assets/icons/delete-icon.svg"
+                                            alt=""
+                                            class="cart-table__icon"
+                                        />
+                                    </button>
+                                </div>
+                                <div class="cart-table__row">
+                                    <button class="cart-table__delete-btn">
+                                        <img
+                                            src="./assets/icons/delete-icon.svg"
+                                            alt=""
+                                            class="cart-table__icon"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-table__col">
+                                <div class="cart-table__row"></div>
+                                <div class="cart-table__row">
+                                    <img
+                                        src="./assets/img/product/product-4.png"
+                                        alt=""
+                                        class="cart-table__product-img"
+                                    />
+                                </div>
+                                <div class="cart-table__row">
+                                    <img
+                                        src="./assets/img/product/product-6.png"
+                                        alt=""
+                                        class="cart-table__product-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="cart-table__col">
+                                <div class="cart-table__row">
+                                    <h2 class="cart-table__heading">Food</h2>
+                                </div>
+                                <div class="cart-table__row">
+                                    <h3 class="cart-table__product-name">
+                                        Crispy chicken breasts
+                                    </h3>
+                                </div>
+                                <div class="cart-table__row">
+                                    <h3 class="cart-table__product-name">
+                                        Spaghetti Napoletana
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="cart-table__col">
+                                <div class="cart-table__row">
+                                    <h2 class="cart-table__heading">Price</h2>
+                                </div>
+                                <div class="cart-table__row">
+                                    <span class="cart-table__price"
+                                        >$24.99</span
+                                    >
+                                </div>
+                                <div class="cart-table__row">
+                                    <span class="cart-table__price"
+                                        >$59.00</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="cart-table__col">
+                                <div class="cart-table__row">
+                                    <h2 class="cart-table__heading">
+                                        Quantity
+                                    </h2>
+                                </div>
+                                <div class="cart-table__row">
+                                    <div class="stepper-input">
+                                        <button class="stepper-input__button">
+                                            <img
+                                                src="./assets/icons/sub-icon.svg"
+                                                alt=""
+                                                class="stepper-input__icon"
+                                            />
+                                        </button>
+                                        <input
+                                            type="text"
+                                            name="number-product"
+                                            id="number-product"
+                                            value="1"
+                                            class="stepper-input__input"
+                                        />
+                                        <button class="stepper-input__button">
+                                            <img
+                                                src="./assets/icons/plus-icon.svg"
+                                                alt=""
+                                                class="stepper-input__icon"
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart-table__row">
+                                    <div class="stepper-input">
+                                        <button class="stepper-input__button">
+                                            <img
+                                                src="./assets/icons/sub-icon.svg"
+                                                alt=""
+                                                class="stepper-input__icon"
+                                            />
+                                        </button>
+                                        <input
+                                            type="text"
+                                            name="number-product"
+                                            id="number-product"
+                                            value="1"
+                                            class="stepper-input__input"
+                                        />
+                                        <button class="stepper-input__button">
+                                            <img
+                                                src="./assets/icons/plus-icon.svg"
+                                                alt=""
+                                                class="stepper-input__icon"
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-table__col">
+                                <div class="cart-table__row">
+                                    <h2 class="cart-table__heading">
+                                        Subtotal
+                                    </h2>
+                                </div>
+                                <div class="cart-table__row">
+                                    <span class="cart-table__price"
+                                        >$24.99</span
+                                    >
+                                </div>
+                                <div class="cart-table__row">
+                                    <span class="cart-table__price"
+                                        >$59.00</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-table__body-small d-none d-md-block">
+                            <div class="cart-table__block">
+                                <div class="cart-table__row">
+                                    <button class="cart-table__delete-btn">
+                                        <img
+                                            src="./assets/icons/delete-icon.svg"
+                                            alt=""
+                                            class="cart-table__icon"
+                                        />
+                                    </button>
+                                </div>
+
+                                <div class="cart-table__row">
+                                    <h2 class="cart-table__heading">Food</h2>
+                                    <h3 class="cart-table__product-name">
+                                        Crispy chicken breasts
+                                    </h3>
+                                </div>
+
+                                <div class="cart-table__row">
+                                    <h2 class="cart-table__heading">Price</h2>
+                                    <h3 class="cart-table__product-name">
+                                        $24.99
+                                    </h3>
+                                </div>
+
+                                <div class="cart-table__row">
+                                    <h2 class="cart-table__heading">
+                                        Quantity
+                                    </h2>
+                                    <div class="stepper-input">
+                                        <button class="stepper-input__button">
+                                            <img
+                                                src="./assets/icons/sub-icon.svg"
+                                                alt=""
+                                                class="stepper-input__icon"
+                                            />
+                                        </button>
+                                        <input
+                                            type="text"
+                                            name="number-product"
+                                            id="number-product"
+                                            value="1"
+                                            class="stepper-input__input"
+                                        />
+                                        <button class="stepper-input__button">
+                                            <img
+                                                src="./assets/icons/plus-icon.svg"
+                                                alt=""
+                                                class="stepper-input__icon"
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="cart-table__row">
+                                    <h2 class="cart-table__heading">
+                                        Subtotal
+                                    </h2>
+                                    <h3 class="cart-table__product-name">
+                                        $24.99
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="cart-table__block">
+                                <div class="cart-table__row">
+                                    <button class="cart-table__delete-btn">
+                                        <img
+                                            src="./assets/icons/delete-icon.svg"
+                                            alt=""
+                                            class="cart-table__icon"
+                                        />
+                                    </button>
+                                </div>
+
+                                <div class="cart-table__row">
+                                    <h2 class="cart-table__heading">Food</h2>
+                                    <h3 class="cart-table__product-name">
+                                        Spaghetti Napoletana
+                                    </h3>
+                                </div>
+
+                                <div class="cart-table__row">
+                                    <h2 class="cart-table__heading">Price</h2>
+                                    <h3 class="cart-table__product-name">
+                                        $59.00
+                                    </h3>
+                                </div>
+
+                                <div class="cart-table__row">
+                                    <h2 class="cart-table__heading">
+                                        Quantity
+                                    </h2>
+                                    <div class="stepper-input">
+                                        <button class="stepper-input__button">
+                                            <img
+                                                src="./assets/icons/sub-icon.svg"
+                                                alt=""
+                                                class="stepper-input__icon"
+                                            />
+                                        </button>
+                                        <input
+                                            type="text"
+                                            name="number-product"
+                                            id="number-product"
+                                            value="1"
+                                            class="stepper-input__input"
+                                        />
+                                        <button class="stepper-input__button">
+                                            <img
+                                                src="./assets/icons/plus-icon.svg"
+                                                alt=""
+                                                class="stepper-input__icon"
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="cart-table__row">
+                                    <h2 class="cart-table__heading">
+                                        Subtotal
+                                    </h2>
+                                    <h3 class="cart-table__product-name">
+                                        $59.00
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-table__cta">
+                            <button class="btn cart-table__cta-btn">
+                                Copon code
+                            </button>
+
+                            <button
+                                class="cart-table__cta-btn btn btn--primary"
+                            >
+                                Apply coupon
+                            </button>
+
+                            <button
+                                class="cart-table__cta-btn btn btn--primary"
+                            >
+                                Update Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="row">
+                        <div
+                            class="col-6 col-xl-7 col-lg-8 col-md-12 offset-6 offset-xl-5 offset-lg-4 offset-md-0"
+                        >
+                            <h2 class="heading heading--lv4 heading--margin">
+                                Cart totals
+                            </h2>
+
+                            <form action="" class="form cart__form">
+                                <div class="checkout-summary">
+                                    <div class="checkout-summary__item">
+                                        <span class="checkout-summary__label">
+                                            Subtotal
+                                        </span>
+                                        <span class="checkout-summary__price">
+                                            $83.99
+                                        </span>
+                                    </div>
+
+                                    <div class="checkout-summary__item">
+                                        <span class="checkout-summary__label">
+                                            Shipping
+                                        </span>
+
+                                        <div class="checkout-summary__col">
+                                            <p class="checkout-summary__text">
+                                                Flat rate:
+                                                <strong
+                                                    class="checkout-summary__text--strong"
+                                                >
+                                                    $6.00
+                                                </strong>
+                                            </p>
+
+                                            <p class="checkout-summary__text">
+                                                Shipping to
+                                                <strong
+                                                    class="checkout-summary__text--strong"
+                                                >
+                                                    New South Wales.
+                                                </strong>
+                                            </p>
+
+                                            <p class="checkout-summary__row">
+                                                Change address
+                                                <img
+                                                    src="./assets/icons/bus-icon.svg"
+                                                    alt=""
+                                                    class="checkout-summary__icon"
+                                                />
+                                            </p>
+
+                                            <div
+                                                class="form__group form__group--margin"
+                                            >
+                                                <div class="form__text-input">
+                                                    <input
+                                                        type="text"
+                                                        class="form__input"
+                                                        placeholder="Australia"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/down-arrow-white.svg"
+                                                        alt=""
+                                                        class="form__input-icon"
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="form__group form__group--margin"
+                                            >
+                                                <div class="form__text-input">
+                                                    <input
+                                                        type="text"
+                                                        class="form__input"
+                                                        placeholder="New South Wales"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/down-arrow-white.svg"
+                                                        alt=""
+                                                        class="form__input-icon"
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="form__group form__group--margin"
+                                            >
+                                                <div class="form__text-input">
+                                                    <input
+                                                        type="text"
+                                                        class="form__input"
+                                                        placeholder="Suburb"
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="form__group form__group--margin"
+                                            >
+                                                <div class="form__text-input">
+                                                    <input
+                                                        type="text"
+                                                        class="form__input"
+                                                        placeholder="Postcode"
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="form__group form__group--margin"
+                                            >
+                                                <button
+                                                    class="btn btn--primary checkout-summary__submit-btn"
+                                                >
+                                                    Update
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="checkout-summary__item">
+                                        <span class="checkout-summary__label">
+                                            Total
+                                        </span>
+                                        <span class="checkout-summary__price">
+                                            $89.99
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <button
+                                class="btn btn--primar checkout-summary__process-btn"
+                            >
+                                Proceed to Checkout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <script></script>
+    </body>
+</html>
