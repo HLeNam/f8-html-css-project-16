@@ -14,6 +14,10 @@
         @include abstracts.screen(lg) {
             width: 100%;
         }
+
+        &--none-shrink {
+            flex-shrink: 0;
+        }
     }
 
     &__img {
@@ -24,12 +28,40 @@
         object-fit: cover;
     }
 
-    &__time {
+    &__time,
+    &__owner {
         display: block;
         margin-bottom: 20px;
 
         color: #fff;
         line-height: 162.5%; /* 162.5% */
+
+        &--margin {
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__owner {
+        position: relative;
+
+        margin-left: 30px;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 50%;
+            left: -15px;
+
+            translate: -50%;
+
+            width: 5px;
+            height: 5px;
+
+            border-radius: 50%;
+            background: #fff;
+        }
     }
 
     &__content {
@@ -40,6 +72,28 @@
         @include abstracts.screen(sm) {
             font-size: 2.4rem;
             line-height: 141.667%; /* 141.667% */
+        }
+
+        &--line-clamp {
+            letter-spacing: -2px;
+
+            display: -webkit-box;
+            -webkit-line-clamp: var(--line-clamp, 2);
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+            @include abstracts.screen(xl) {
+                font-size: 3.4rem;
+                line-height: 141.667%; /* 141.667% */
+            }
+
+            @include abstracts.screen(sm) {
+                --line-clamp: 3;
+
+                letter-spacing: 0;
+                font-size: 2.8rem;
+                line-height: 141.667%; /* 141.667% */
+            }
         }
     }
 
@@ -82,6 +136,11 @@
 
         color: #fff;
         line-height: 162.5%; /* 162.5% */
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
     }
 
     &--reverse {

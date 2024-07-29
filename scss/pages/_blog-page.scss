@@ -1,0 +1,113 @@
+@use "../abstracts";
+
+.blog-page {
+    margin-top: 80px;
+
+    &__heading {
+        padding: 28px 0;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+.blog-container {
+    padding: 50px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    @include abstracts.screen(sm) {
+        padding: 40px 0;
+    }
+
+    &__blog-item {
+        height: 100%;
+        gap: 24px;
+        flex-direction: column;
+
+        &-btn {
+            margin-top: 0;
+        }
+
+        &-separate {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__media {
+        position: relative;
+
+        width: 100%;
+        padding-top: 93.68%;
+
+        &-img {
+            position: absolute;
+
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &--lg-border-none {
+        @include abstracts.screen(lg) {
+            border-bottom: none;
+            padding: 0;
+
+            &:nth-of-type(2) {
+                margin-top: 40px;
+            }
+
+            &:nth-of-type(3) {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+.blog-cta {
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+    @include abstracts.screen(sm) {
+        margin-top: 34px;
+    }
+
+    &__pre-btn,
+    &__next-btn {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__numbers {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 28px;
+        height: 28px;
+
+        cursor: pointer;
+        user-select: none;
+        transition: 0.2s;
+
+        &--current {
+            background: #fb8f2c;
+
+            pointer-events: none;
+        }
+
+        &:hover {
+            background: #fb8f2c;
+        }
+    }
+}
