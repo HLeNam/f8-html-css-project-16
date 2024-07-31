@@ -43,6 +43,12 @@
         background: #fff;
     }
 
+    &--rounded {
+        padding: 10px 15px;
+        border-radius: 19.5px;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
     &[disabled],
     &--disable {
         opacity: 0.5;
