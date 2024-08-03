@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restaurant</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Embed Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Playball&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <main class="coming-soon__page">
+            <div class="top-center coming-soon__body">
+                <h1 class="heading heading--lv2 coming-soon__heading">
+                    Subscribe Newsletter & get letest news
+                </h1>
+                <p class="coming-soon__desc">
+                    Our being able to do what we like best, every pleasure is to
+                    be welcomed and every pain avoided certain.
+                </p>
+
+                <form action="" class="form coming-soon__form">
+                    <div class="form__text-input">
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your email address"
+                            class="form__input"
+                            required=""
+                        />
+                        <img
+                            src="./assets/icons/white-arrow-small.svg"
+                            alt=""
+                            class="form__input-icon"
+                        />
+                    </div>
+                </form>
+
+                <div class="coming-soon__date">
+                    <div class="coming-soon__item">
+                        <span class="coming-soon__time">98</span>
+                        <span class="coming-soon__text">Days</span>
+                    </div>
+                    <div class="coming-soon__item">
+                        <span class="coming-soon__time">03</span>
+                        <span class="coming-soon__text">Hour</span>
+                    </div>
+                    <div class="coming-soon__item">
+                        <span class="coming-soon__time">25</span>
+                        <span class="coming-soon__text">Minutes</span>
+                    </div>
+                    <div class="coming-soon__item">
+                        <span class="coming-soon__time">12</span>
+                        <span class="coming-soon__text">Seconds</span>
+                    </div>
+                </div>
+
+                <a href="./" class="coming-soon__btn btn btn--text">
+                    Go to Home
+                </a>
+            </div>
+        </main>
+
+        <script></script>
+    </body>
+</html>
