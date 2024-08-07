@@ -3774,26 +3774,42 @@ input:-webkit-autofill:hover {
   background: rgba(251, 143, 44, 0.8);
 }
 .product-tab__list {
+  position: relative;
   display: flex;
   align-items: center;
   margin: 0 -21px;
   padding-bottom: 16px;
+  user-select: none;
 }
 .product-tab__item {
   position: relative;
   padding: 0 21px;
+  user-select: none;
 }
-.product-tab__item--current::before {
-  content: "";
+.product-tab__item:not(.product-tab__item--current):hover {
+  cursor: pointer;
+}
+.product-tab__line {
   position: absolute;
-  bottom: -16px;
-  display: block;
+  left: 0;
+  bottom: 0;
+  width: 0px;
   height: 1px;
-  width: calc(100% - 42px);
   background: #fb8f2c;
+  transition: all 0.2s ease;
 }
 .product-tab__contents {
+  display: flex;
   padding-top: 31px;
+  overflow: hidden;
+}
+.product-tab__content {
+  display: none;
+  flex-shrink: 0;
+  width: 100%;
+}
+.product-tab__content--current {
+  display: block;
 }
 .product-tab__text-content {
   margin-top: -30px;

@@ -93,32 +93,55 @@
         }
 
         &__list {
+            position: relative;
+
             display: flex;
             align-items: center;
 
             margin: 0 -21px;
             padding-bottom: 16px;
+            user-select: none;
         }
 
         &__item {
             position: relative;
             padding: 0 21px;
 
-            &--current::before {
-                content: "";
-                position: absolute;
-
-                bottom: -16px;
-
-                display: block;
-                height: 1px;
-                width: calc(100% - 42px);
-                background: #fb8f2c;
+            &:not(&--current):hover {
+                cursor: pointer;
             }
+            user-select: none;
+        }
+
+        &__line {
+            position: absolute;
+
+            left: 0;
+            bottom: 0;
+            width: 0px;
+            height: 1px;
+
+            background: #fb8f2c;
+
+            transition: all 0.2s ease;
         }
 
         &__contents {
+            display: flex;
+
             padding-top: 31px;
+
+            overflow: hidden;
+        }
+
+        &__content {
+            display: none;
+            flex-shrink: 0;
+            width: 100%;
+
+            &--current {
+                display: block;
+            }
         }
 
         &__text-content {

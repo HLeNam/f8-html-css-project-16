@@ -208,6 +208,7 @@
                                 Description
                             </li>
                             <li class="product-tab__item">Reviews (1)</li>
+                            <div class="product-tab__line"></div>
                         </ul>
 
                         <div class="separate product-tab__separate"></div>
@@ -245,7 +246,7 @@
                         </div>
 
                         <!-- Reviews -->
-                        <div class="product-tab__content d-none">
+                        <div class="product-tab__content">
                             <div class="review-comment__list">
                                 <!-- Comment 1 -->
                                 <div class="review-comment">
@@ -608,6 +609,38 @@
         <footer id="footer" class="footer"></footer>
         <script>
             load("#footer", "./templates/footer.html");
+
+            const tabs = $$(".product-tab__item");
+            const panes = $$(".product-tab__content");
+
+            const currentTab = $(".product-tab__item--current");
+            const line = $(".product-tab__line");
+
+            Object.assign(line.style, {
+                left: currentTab.offsetLeft + 21 + "px",
+                width: currentTab.offsetWidth - 42 + "px",
+            });
+
+            tabs.forEach((tab, index) => {
+                const pane = panes[index];
+
+                tab.onclick = function () {
+                    $(
+                        ".product-tab__item.product-tab__item--current"
+                    ).classList.remove("product-tab__item--current");
+                    $(
+                        ".product-tab__content.product-tab__content--current"
+                    ).classList.remove("product-tab__content--current");
+
+                    Object.assign(line.style, {
+                        left: this.offsetLeft + 21 + "px",
+                        width: this.offsetWidth - 42 + "px",
+                    });
+
+                    this.classList.add("product-tab__item--current");
+                    pane.classList.add("product-tab__content--current");
+                };
+            });
         </script>
 
         <script></script>
